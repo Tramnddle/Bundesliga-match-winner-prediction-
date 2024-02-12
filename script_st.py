@@ -10,6 +10,7 @@ from st_files_connection import FilesConnection
 import gcsfs
 import os
 import lightgbm as lgb
+import joblib
 
 
 secrets = st.secrets["connections_gcs"]
