@@ -114,7 +114,6 @@ pyls-spyder==0.4.0
 pyparsing==3.1.1
 PyQt5==5.15.7
 PyQtWebEngine==5.15.4
-python-lsp-jsonrpc==1.0.0
 pywin32==305.1
 PyYAML==6.0.1
 pyzmq==25.1.1
