@@ -25,7 +25,6 @@ cssselect==1.1.0
 cycler==0.12.1
 Cython==3.0.5
 daal4py==2023.1.1
-datashape==0.5.4
 debugpy==1.8.0
 et-xmlfile==1.1.0
 executing==2.0.1
