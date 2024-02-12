@@ -133,7 +133,6 @@ soupsieve==2.5
 st-files-connection==0.1.0
 stack-data==0.6.3
 streamlit==1.27.1
-TBB==0.2
 tenacity==8.2.3
 tensorboard==2.14.1
 tensorboard-data-server==0.7.2
