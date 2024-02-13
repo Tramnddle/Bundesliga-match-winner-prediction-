@@ -29,7 +29,8 @@ st.title('Bundesliga match score prediction')
 st.dataframe(df)
 
 # Create a dropdown menu
-teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
+#teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
+teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
 user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
 user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
