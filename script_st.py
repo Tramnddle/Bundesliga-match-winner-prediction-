@@ -32,6 +32,9 @@ st.dataframe(df)
 #teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
 teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
+df=df.drop('Unnamed: 0', axis = 1)
+df["date"] = pd.to_datetime(df["date"])
+
 # Convert categorical variables into numerical variables
 df["venue_code"] = df["venue"].astype("category").cat.codes
 df["team_code"] = df["team"].astype("category").cat.codes
@@ -46,9 +49,6 @@ user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
 user_inputs_round = st.number_input("Enter the matchweek", step=1, value=0, format="%d")
-
-df=df.drop('Unnamed: 0', axis = 1)
-df["date"] = pd.to_datetime(df["date"])
 
 # rename and match the teams name of home team and opponent team columns
 Team_name = {
