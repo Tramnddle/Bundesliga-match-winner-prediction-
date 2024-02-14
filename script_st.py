@@ -138,7 +138,7 @@ df = pd.merge(df, average_goal_t, on = "team")
 df[['gf','ga','average_gf_t','average_ga_t']] = df[['gf_x','ga_x','ga_y','gf_y']].rename(columns={'gf_x': 'gf','ga_x':'ga','ga_y':'average_ga_t', 'gf_y': 'average_gf_t'})
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1, inplace=True)
 
-st.write(df)
+st.dataframe(df)
 
 # average goal per season per round
 average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
