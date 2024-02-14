@@ -48,7 +48,7 @@ user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
 user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
-user_inputs_round = st.number_input("Enter the matchweek", step=1, value=0, format="%d")
+user_inputs_round = st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d")
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 
 # rename and match the teams name of home team and opponent team columns
@@ -139,6 +139,8 @@ df[['gf','ga','average_gf_t','average_ga_t']] = df[['gf_x','ga_x','ga_y','gf_y']
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1, inplace=True)
 
 # average goal per season per round
+#df['season'] = df['season'].astype(int)
+df['round'] = df['round'].astype(int)
 average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_sr, on=["season", "round"])
 df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
