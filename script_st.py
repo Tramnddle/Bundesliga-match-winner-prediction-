@@ -32,7 +32,7 @@ st.dataframe(df)
 #teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
 teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
-df=df.drop('Unnamed: 0', axis = 1)
+df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
 df["date"] = pd.to_datetime(df["date"])
 
 # Convert categorical variables into numerical variables
