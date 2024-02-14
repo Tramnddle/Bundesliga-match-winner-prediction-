@@ -32,8 +32,20 @@ st.dataframe(df)
 #teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
 teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
+# Convert categorical variables into numerical variables
+df["venue_code"] = df["venue"].astype("category").cat.codes
+df["team_code"] = df["team"].astype("category").cat.codes
+df["opp_code"] = df["opponent"].astype("category").cat.codes
+#matches_rolling_A["hour"] = matches_rolling_A["time"].str.replace(":.+", "", regex=True).astype("int")
+df["day_code"] = df["date"].dt.dayofweek
+df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
+
 user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
 user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
+user_inputs_date = st.date_input('Select a date')
+venue = ['Home','Away']
+user_inputs_venue = st.selectbox('Select a venue',venue)
+user_inputs_round = st.number_input("Enter the matchweek", step=1, value=0, format="%d")
 
 df=df.drop('Unnamed: 0', axis = 1)
 df["date"] = pd.to_datetime(df["date"])
@@ -105,14 +117,6 @@ Opponent_name = {
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
 
-# Convert categorical variables into numerical variables
-df["venue_code"] = df["venue"].astype("category").cat.codes
-df["team_code"] = df["team"].astype("category").cat.codes
-df["opp_code"] = df["opponent"].astype("category").cat.codes
-#matches_rolling_A["hour"] = matches_rolling_A["time"].str.replace(":.+", "", regex=True).astype("int")
-df["day_code"] = df["date"].dt.dayofweek
-df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
-
 # average goal per season and team
 average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
 df = pd.merge(df, average_goal_st, on = ["team","season"])
@@ -139,6 +143,25 @@ df = pd.merge(df, average_goal_sr, on=["season", "round"])
 df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
 
 df['total_goal'] = df['gf'] + df['ga']
+
+# Add new match to the dataframe:
+match_AB = {
+            'date':user_inputs_date,
+            'time':'',
+            'comp': 'Bundesliga',
+            'round':user_inputs_round,
+            'day':'',
+            'venue':user_inputs_venue,
+            'gf':'',
+            'ga':'',
+            'opponent':user_inputs_B,
+            'poss':'',
+            'sh':'',
+            'save%':'',
+            'season':'',
+            'team':user_inputs_A,
+            }
+df = df.append(match_AB, ignore_index=True)
 
 df_A = df[df["team"]==user_inputs_A]
 
@@ -223,3 +246,4 @@ matches_rolling_A = matches_rolling_A[['date', 'time', 'comp', 'round', 'day', '
        'average_gf_s', 'ga', 'average_gf_t', 'average_ga_t', 'total_goal',
        'gf', 'average_gf_sr']]
 
+st.write(matches_rolling_A)
