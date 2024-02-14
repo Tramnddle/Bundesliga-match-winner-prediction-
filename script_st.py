@@ -140,7 +140,7 @@ df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1, inplace=True)
 
 # average goal per season per round
 #df['season'] = df['season'].astype(int)
-df['round'] = df['round'].astype(int)
+df['round'] = pd.to_numeric(df['round'], errors='coerce')
 average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_sr, on=["season", "round"])
 df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
