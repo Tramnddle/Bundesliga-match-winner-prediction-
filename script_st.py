@@ -49,6 +49,7 @@ user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
 user_inputs_round = st.number_input("Enter the matchweek", step=1, value=0, format="%d")
+user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 
 # rename and match the teams name of home team and opponent team columns
 Team_name = {
