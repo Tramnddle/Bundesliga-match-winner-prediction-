@@ -117,7 +117,7 @@ Opponent_name = {
 
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
-st.dataframe(df)
+
 # average goal per season and team
 average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
 df = pd.merge(df, average_goal_st, on = ["team","season"])
@@ -125,12 +125,16 @@ df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_
                                 {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 
+st.dataframe(df)
+
 # average goal per season
 average_goal_s = df.groupby('season')['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_s, on = "season")
 df[['gf','average_gf_s']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_s'})
 df = pd.DataFrame(df)
 df = df.drop(['gf_x','gf_y'], axis = 1)
+
+st.dataframe(df)
 
 # average goal per team
 average_goal_t = df.groupby('team')[['gf','ga']].mean().reset_index()
