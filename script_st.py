@@ -35,7 +35,7 @@ teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
 user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
 
-df = df[df["team"]==int(user_inputs_A)]
+df = df[df["team"]==user_inputs_A]
 
 df=df.drop('Unnamed: 0', axis = 1)
 df["date"] = pd.to_datetime(df["date"])
