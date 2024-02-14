@@ -42,4 +42,4 @@ df["date"] = pd.to_datetime(df["date"])
 
 grouped_matches = df.groupby("team")
 group = grouped_matches.get_group("Arminia").sort_values("date")
-group
+st.dataframe(group)
