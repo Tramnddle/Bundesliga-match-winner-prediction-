@@ -159,7 +159,7 @@ match_AB = {
             'poss':'',
             'sh':'',
             'save%':'',
-            'season':'',
+            'season':user_inputs_season,
             'team':user_inputs_A,
             }
 df = df.append(match_AB, ignore_index=True)
