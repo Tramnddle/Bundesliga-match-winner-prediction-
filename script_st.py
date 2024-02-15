@@ -171,9 +171,9 @@ matches_rolling.index = matches_rolling.index.droplevel()
 st.dataframe(matches_rolling)
 
  # Head 2 head performance  
-home_team = matches_rolling['team'].iloc[-1]
-away_team = matches_rolling['opponent'].iloc[-1]
-date = matches_rolling['date'].iloc[-1]
+home_team = user_inputs_A
+away_team = user_inputs_B
+date = user_inputs_date
         
 # Filter the DataFrame for historical matches between the specified home and away teams
 historical_matches_1 = matches_rolling[(matches_rolling['team'] == away_team) & (matches_rolling['opponent'] == home_team)] # historical matches stats of opponent team
