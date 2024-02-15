@@ -187,6 +187,8 @@ historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
 matches = df[(df['team'] == away_team) & (df['opponent'] == home_team)]
 matches = matches[matches['date'] == date]
 st.dataframe(matches)
+st.write(home_team)
+st.write(away_team)
 
 cols = ['gf', 'sh', 'save%','poss']
 opp_cols = ['save%_rolling','sh_rolling', 'gf_rolling']       
