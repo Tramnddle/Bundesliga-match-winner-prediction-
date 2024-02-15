@@ -141,7 +141,7 @@ def custom_mean(values):
     else:
         return values.mean()
 # average goal per season and team
-average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean(skipna=False).reset_index()
+average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].agg(custom_mean).reset_index()
 df = pd.merge(df, average_goal_st, on = ["team","season"])
 df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_y']].rename(columns=
                                 {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
