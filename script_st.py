@@ -169,7 +169,7 @@ match_AB = {
             'team':user_inputs_A,
             }
 match_AB_df = pd.DataFrame(match_AB)
-df = df.append(match_AB_df, ignore_index=True)
+df_update = df.append(match_AB_df, ignore_index=True)
 
 df_A = df[df["team"]==user_inputs_A]
 
