@@ -26,7 +26,6 @@ Teamlist = conn.read("gs://bundesliga_0410/Teamlist.csv", input_format="csv")
 st.title('Bundesliga match score prediction')
 
 # Create a dropdown menu
-#teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
 teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
 df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
