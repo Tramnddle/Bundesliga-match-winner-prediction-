@@ -170,8 +170,7 @@ matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1,
 matches_rolling.index = matches_rolling.index.droplevel()
 st.dataframe(matches_rolling)
 
-# def get_historical_data(df, group, cols, opp_cols):
-    
+ # Head 2 head performance  
 home_team = matches_rolling['team'].iloc[-1]
 away_team = matches_rolling['opponent'].iloc[-1]
 date = matches_rolling['date'].iloc[-1]
@@ -203,7 +202,7 @@ new_cols_1 = [f'{c}_hist_opp' for c in cols]
 new_cols_2 = [f'{c}_hist_home' for c in cols]
 new_cols_3 = [f'{c}_opp' for c in opp_cols]
 
-match_AB = matches_rolling.iloc[-1]
+match_AB = pd.DataFrame([matches_rolling.iloc[-1]])
 match_AB[new_cols_1] = historical_data_1
 match_AB[new_cols_2] = historical_data_2
 match_AB[new_cols_3] = matches[opp_cols]
