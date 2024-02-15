@@ -178,8 +178,9 @@ date = user_inputs_date
 # Filter the DataFrame for historical matches between the specified home and away teams
 historical_matches_1 = matches_rolling[(matches_rolling['team'] == away_team) & (matches_rolling['opponent'] == home_team)] # historical matches stats of opponent team
 historical_matches_2 = matches_rolling[(matches_rolling['team'] == home_team) & (matches_rolling['opponent'] == away_team)] # historical matches stats of home team
-st.write(historical_matches_1['date'].dtype)
-print(type(user_inputs_date))
+
+st.write(type(date))
+
         # Exclude the current match by filtering based on the date
 historical_matches_1 = historical_matches_1[historical_matches_1['date'] < date]
 historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
