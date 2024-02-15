@@ -61,7 +61,7 @@ match_AB = {
             'team':user_inputs_A,
             }
 #match_AB = pd.DataFrame(match_AB)
-df = df.append(match_AB, ignore_index=True)
+df.loc[len(df.index)] = [user_inputs_date,'','Bundesliga',user_inputs_round,'',user_inputs_venue,'','',user_inputs_B,'','','',user_inputs_season,user_inputs_A]
 
 # Convert categorical variables into numerical variables
 df["venue_code"] = df["venue"].astype("category").cat.codes
