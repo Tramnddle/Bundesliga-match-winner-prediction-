@@ -147,8 +147,7 @@ df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', '
 
 df['total_goal'] = df['gf'] + df['ga']
 
-df_A = df[df["team"]==user_inputs_A]
-
+df_A = df[df['team']==user_inputs_A]
 # average of the last 3 games
 def rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2):
     group = group.sort_values("date")
@@ -170,66 +169,46 @@ matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols
 matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1, cols_2, new_cols_1, new_cols_2))
 st.dataframe(matches_rolling_A)
 
-def get_historical_data(df, group, cols, opp_cols):
-    for i in range(len(group)):
-        home_team = group['team'].iloc[i]
-        away_team = group['opponent'].iloc[i]
-        date = group['date'].iloc[i]
+# def get_historical_data(df, group, cols, opp_cols):
+    
+home_team = matches_rolling.loc[len(matches_rolling.index), 'team']
+away_team = matches_rolling.loc[len(matches_rolling.index), 'opponent']
+date = matches_rolling.loc[len(matches_rolling.index), 'date']
         
-        # Filter the DataFrame for historical matches between the specified home and away teams
-        historical_matches_1 = df[(df['team'] == away_team) & (df['opponent'] == home_team)] # historical matches stats of opponent team
-        historical_matches_2 = df[(df['team'] == home_team) & (df['opponent'] == away_team)] # historical matches stats of home team
+# Filter the DataFrame for historical matches between the specified home and away teams
+historical_matches_1 = matches_rolling[(matches_rolling['team'] == away_team) & (matches_rolling['opponent'] == home_team)] # historical matches stats of opponent team
+historical_matches_2 = matches_rolling[(matches_rolling['team'] == home_team) & (matches_rolling['opponent'] == away_team)] # historical matches stats of home team
         
         # Exclude the current match by filtering based on the date
-        historical_matches_1 = historical_matches_1[historical_matches_1['date'] < date]
-        historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
+historical_matches_1 = historical_matches_1[historical_matches_1['date'] < date]
+historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
 
         # Select opponent's last match
-        matches = df[(df['team'] == away_team) & (df['opponent'] == home_team)]
-        matches = matches[matches['date'] == date]
-        
-        # Select opponent's defensive stats last match
-        matches[opp_cols]
+matches = df[(df['team'] == away_team) & (df['opponent'] == home_team)]
+matches = matches[matches['date'] == date]
+
+cols = ['gf', 'sh', 'save%','poss']
+opp_cols = ['save%_rolling','sh_rolling', 'gf_rolling']       
         
         # Select relevant columns for historical data
-        historical_data_1 = historical_matches_1[cols]
-        historical_data_2 = historical_matches_2[cols]
+historical_data_1 = historical_matches_1[cols]
+historical_data_2 = historical_matches_2[cols]
         
         # Optionally, you can aggregate the historical data (e.g., take the mean)
-        historical_data_1 = historical_data_1.mean()
-        historical_data_2 = historical_data_2.mean()
+historical_data_1 = historical_data_1.mean()
+historical_data_2 = historical_data_2.mean()
         
-        new_cols_1 = [f'{c}_hist_opp' for c in cols]
-        new_cols_2 = [f'{c}_hist_home' for c in cols]
-        new_cols_3 = [f'{c}_opp' for c in opp_cols]
+new_cols_1 = [f'{c}_hist_opp' for c in cols]
+new_cols_2 = [f'{c}_hist_home' for c in cols]
+new_cols_3 = [f'{c}_opp' for c in opp_cols]
 
-        # Append the new columns to the DataFrame for each iteration
-        for col, new_col in zip(cols, new_cols_1):
-            group.loc[group.index[i], new_col] = historical_data_1[col]
+match_AB = matches_rolling.iloc[-1]
+match_AB[new_cols_1] = historical_data_1
+match_AB[new_cols_2] = historical_data_2
+match_AB[new_cols_3] = matches[opp_cols]
 
-        for col, new_col in zip(cols, new_cols_2):
-            group.loc[group.index[i], new_col] = historical_data_2[col]
+st.dataframe(match_AB)
 
-        for col, new_col in zip(opp_cols, new_cols_3):
-            group.at[group.index[i], new_col] = matches[col].iloc[0]
-            
-    return group
 
-# Example usage
-cols = ['gf', 'sh', 'save%','poss']
-opp_cols = ['save%_rolling','sh_rolling', 'gf_rolling']
-df = matches_rolling.copy()  # Ensure that the original DataFrame is not modified
-group = matches_rolling_A
-matches_rolling_A = get_historical_data(df, group, cols, opp_cols)
-
-matches_rolling_A = matches_rolling_A[['date', 'time', 'comp', 'round', 'day', 'venue', 'opponent', 'poss',
-       'sh', 'save%', 'season', 'team', 'gf_rolling', 'ga_rolling',
-       'poss_rolling', 'sh_rolling', 'save%_rolling', 'gf_hist_opp',
-       'sh_hist_opp', 'save%_hist_opp', 'poss_hist_opp', 'gf_hist_home',
-       'sh_hist_home', 'save%_hist_home', 'poss_hist_home',
-       'save%_rolling_opp', 'sh_rolling_opp', 'gf_rolling_opp', 'venue_code',
-       'team_code', 'opp_code', 'day_code', 'average_ga_st', 'average_gf_st',
-       'average_gf_s', 'ga', 'average_gf_t', 'average_ga_t', 'total_goal',
-       'gf', 'average_gf_sr']]
 
 
