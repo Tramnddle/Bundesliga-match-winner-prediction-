@@ -126,15 +126,12 @@ df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_
                                 {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 
-st.dataframe(df)
-
 # average goal per season
 average_goal_s = df.groupby('season')['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_s, on = "season")
 df[['gf','average_gf_s']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_s'})
 df = df.drop(['gf_x','gf_y'], axis = 1)
 
-st.dataframe(df)
 
 # average goal per team
 average_goal_t = df.groupby('team')[['gf','ga']].mean().reset_index()
@@ -142,13 +139,12 @@ df = pd.merge(df, average_goal_t, on = "team")
 df[['gf','ga','average_gf_t','average_ga_t']] = df[['gf_x','ga_x','ga_y','gf_y']].rename(columns={'gf_x': 'gf','ga_x':'ga','ga_y':'average_ga_t', 'gf_y': 'average_gf_t'})
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 
-st.dataframe(df)
 
 # average goal per season per round
 average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_sr, on=["season", "round"])
 df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
-st.dataframe(df)
+
 
 df['total_goal'] = df['gf'] + df['ga']
 
@@ -172,6 +168,7 @@ new_cols_2 = [f"{c}_last_game" for c in cols_2]
 group = df_A
 
 matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2)
+st.dataframe(matches_rolling_A)
 
 def get_historical_data(df, group, cols, opp_cols):
     for i in range(len(group)):
