@@ -60,7 +60,7 @@ match_AB = {
             'season':user_inputs_season,
             'team':user_inputs_A,
             }
-match_AB = pd.DataFrame(match_AB)
+#match_AB = pd.DataFrame(match_AB)
 df = df.append(match_AB, ignore_index=True)
 
 # Convert categorical variables into numerical variables
