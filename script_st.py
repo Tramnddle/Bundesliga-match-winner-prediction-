@@ -167,6 +167,7 @@ group = df_A
 
 matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2)
 matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1, cols_2, new_cols_1, new_cols_2))
+matches_rolling.index = matches_rolling.index.droplevel()
 st.dataframe(matches_rolling_A)
 
 # def get_historical_data(df, group, cols, opp_cols):
