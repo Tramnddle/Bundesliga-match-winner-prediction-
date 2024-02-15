@@ -172,9 +172,9 @@ st.dataframe(matches_rolling)
 
 # def get_historical_data(df, group, cols, opp_cols):
     
-home_team = matches_rolling.loc[len(matches_rolling.index), 'team']
-away_team = matches_rolling.loc[len(matches_rolling.index), 'opponent']
-date = matches_rolling.loc[len(matches_rolling.index), 'date']
+home_team = matches_rolling['team'].iloc[-1]
+away_team = matches_rolling['opponent'].iloc[-1]
+date = matches_rolling['date'].iloc[-1]
         
 # Filter the DataFrame for historical matches between the specified home and away teams
 historical_matches_1 = matches_rolling[(matches_rolling['team'] == away_team) & (matches_rolling['opponent'] == home_team)] # historical matches stats of opponent team
