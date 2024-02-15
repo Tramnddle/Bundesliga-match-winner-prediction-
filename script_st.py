@@ -39,36 +39,6 @@ user_inputs_venue = st.selectbox('Select a venue',venue)
 user_inputs_round = 'Matchweek ' + str(st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d"))
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 
-# average goal per season and team
-average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
-df = pd.merge(df, average_goal_st, on = ["team","season"])
-df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_y']].rename(columns=
-                                {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
-df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
-
-st.dataframe(df)
-
-# average goal per season
-average_goal_s = df.groupby('season')['gf'].mean().reset_index()
-df = pd.merge(df, average_goal_s, on = "season")
-df[['gf','average_gf_s']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_s'})
-df = df.drop(['gf_x','gf_y'], axis = 1)
-
-st.dataframe(df)
-
-# average goal per team
-average_goal_t = df.groupby('team')[['gf','ga']].mean().reset_index()
-df = pd.merge(df, average_goal_t, on = "team")
-df[['gf','ga','average_gf_t','average_ga_t']] = df[['gf_x','ga_x','ga_y','gf_y']].rename(columns={'gf_x': 'gf','ga_x':'ga','ga_y':'average_ga_t', 'gf_y': 'average_gf_t'})
-df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
-
-st.dataframe(df)
-
-# average goal per season per round
-average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
-df = pd.merge(df, average_goal_sr, on=["season", "round"])
-df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
-
 # Add new match to the dataframe:
 match_AB = {
             'date':user_inputs_date,
@@ -165,6 +135,37 @@ Opponent_name = {
 
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
+
+# average goal per season and team
+average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
+df = pd.merge(df, average_goal_st, on = ["team","season"])
+df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_y']].rename(columns=
+                                {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
+df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
+
+st.dataframe(df)
+
+# average goal per season
+average_goal_s = df.groupby('season')['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_s, on = "season")
+df[['gf','average_gf_s']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_s'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
+
+st.dataframe(df)
+
+# average goal per team
+average_goal_t = df.groupby('team')[['gf','ga']].mean().reset_index()
+df = pd.merge(df, average_goal_t, on = "team")
+df[['gf','ga','average_gf_t','average_ga_t']] = df[['gf_x','ga_x','ga_y','gf_y']].rename(columns={'gf_x': 'gf','ga_x':'ga','ga_y':'average_ga_t', 'gf_y': 'average_gf_t'})
+df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
+
+st.dataframe(df)
+
+# average goal per season per round
+average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_sr, on=["season", "round"])
+df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
+st.dataframe(df)
 
 df['total_goal'] = df['gf'] + df['ga']
 
