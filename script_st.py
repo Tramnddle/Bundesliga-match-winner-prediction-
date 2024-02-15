@@ -42,7 +42,6 @@ user_inputs_season = st.number_input('Enter the season', min_value=2014, max_val
 df.loc[len(df.index)] = [user_inputs_date,None,'Bundesliga',user_inputs_round,None,user_inputs_venue,None,None,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
 
 df["date"] = pd.to_datetime(df["date"])
-st.dataframe(df)
 
 # Convert categorical variables into numerical variables
 df["venue_code"] = df["venue"].astype("category").cat.codes
@@ -169,7 +168,7 @@ group = df_A
 
 matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2)
 st.dataframe(matches_rolling_A)
-
+st.dataframe(df)
 def get_historical_data(df, group, cols, opp_cols):
     for i in range(len(group)):
         home_team = group['team'].iloc[i]
