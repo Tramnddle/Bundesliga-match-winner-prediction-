@@ -136,10 +136,11 @@ Opponent_name = {
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
 
-df[['gf', 'ga']] = df[['gf', 'ga']].fillna(0)
 
 # average goal per season and team
-average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean(skipna=True).reset_index()
+# Perform groupby operation with apply and lambda function
+average_goal_st = df.groupby(['team', 'season'])[['gf', 'ga']].apply(lambda x: x.mean(skipna=True)).reset_index()
+#average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean(skipna=True).reset_index()
 df = pd.merge(df, average_goal_st, on = ["team","season"])
 df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_y']].rename(columns=
                                 {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
