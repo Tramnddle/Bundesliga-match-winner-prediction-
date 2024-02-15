@@ -29,6 +29,8 @@ st.title('Bundesliga match score prediction')
 #teamname = st.selectbox('Football Team List: ', list(Teamlist['opponent'].itertuples(index=False, name=None)))
 teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
+df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
+
 user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
 user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
 user_inputs_date = st.date_input('Select a date')
@@ -56,7 +58,7 @@ match_AB = {
             }
 #match_AB = pd.DataFrame(match_AB)
 df.loc[len(df.index)] = [user_inputs_date,'','Bundesliga',user_inputs_round,'',user_inputs_venue,'','',user_inputs_B,'','','',user_inputs_season,user_inputs_A]
-df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
+
 df["date"] = pd.to_datetime(df["date"])
 st.dataframe(df)
 
