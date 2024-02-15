@@ -168,8 +168,8 @@ match_AB = {
             'season':user_inputs_season,
             'team':user_inputs_A,
             }
-match_AB = pd.DataFrame([match_AB],index=[0])
-df = df.append(match_AB, ignore_index=True)
+match_AB_df = pd.DataFrame(match_AB)
+df = df.append(match_AB_df, ignore_index=True)
 
 df_A = df[df["team"]==user_inputs_A]
 
