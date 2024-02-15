@@ -35,14 +35,6 @@ df["date"] = pd.to_datetime(df["date"])
 # Open the df file
 st.dataframe(df)
 
-# Convert categorical variables into numerical variables
-df["venue_code"] = df["venue"].astype("category").cat.codes
-df["team_code"] = df["team"].astype("category").cat.codes
-df["opp_code"] = df["opponent"].astype("category").cat.codes
-#matches_rolling_A["hour"] = matches_rolling_A["time"].str.replace(":.+", "", regex=True).astype("int")
-df["day_code"] = df["date"].dt.dayofweek
-df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
-
 user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
 user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
 user_inputs_date = st.date_input('Select a date')
@@ -50,6 +42,34 @@ venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
 user_inputs_round = st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d")
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
+
+# Add new match to the dataframe:
+match_AB = {
+            'date':user_inputs_date,
+            'time':'',
+            'comp': 'Bundesliga',
+            'round':user_inputs_round,
+            'day':'',
+            'venue':user_inputs_venue,
+            'gf':'',
+            'ga':'',
+            'opponent':user_inputs_B,
+            'poss':'',
+            'sh':'',
+            'save%':'',
+            'season':user_inputs_season,
+            'team':user_inputs_A,
+            }
+match_AB = pd.DataFrame(match_AB)
+df = df.append(match_AB, ignore_index=True)
+
+# Convert categorical variables into numerical variables
+df["venue_code"] = df["venue"].astype("category").cat.codes
+df["team_code"] = df["team"].astype("category").cat.codes
+df["opp_code"] = df["opponent"].astype("category").cat.codes
+#matches_rolling_A["hour"] = matches_rolling_A["time"].str.replace(":.+", "", regex=True).astype("int")
+df["day_code"] = df["date"].dt.dayofweek
+df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
 
 # rename and match the teams name of home team and opponent team columns
 Team_name = {
@@ -151,25 +171,6 @@ df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', '
 
 df['total_goal'] = df['gf'] + df['ga']
 
-# Add new match to the dataframe:
-match_AB = {
-            'date':user_inputs_date,
-            'time':'',
-            'comp': 'Bundesliga',
-            'round':user_inputs_round,
-            'day':'',
-            'venue':user_inputs_venue,
-            'gf':'',
-            'ga':'',
-            'opponent':user_inputs_B,
-            'poss':'',
-            'sh':'',
-            'save%':'',
-            'season':user_inputs_season,
-            'team':user_inputs_A,
-            }
-match_AB_df = pd.DataFrame(match_AB)
-df_update = df.append(match_AB_df, ignore_index=True)
 
 df_A = df[df["team"]==user_inputs_A]
 
