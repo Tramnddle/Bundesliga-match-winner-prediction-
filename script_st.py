@@ -49,7 +49,7 @@ df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 st.dataframe(df)
 
 # average goal per season
-average_goal_s = df.groupby('season')['gf'].mean(skipna=False).reset_index()
+average_goal_s = df.groupby('season')['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_s, on = "season")
 df[['gf','average_gf_s']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_s'})
 df = df.drop(['gf_x','gf_y'], axis = 1)
