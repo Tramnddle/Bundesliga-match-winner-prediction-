@@ -167,8 +167,9 @@ new_cols_2 = [f"{c}_last_game" for c in cols_2]
 group = df_A
 
 matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2)
+matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1, cols_2, new_cols_1, new_cols_2))
 st.dataframe(matches_rolling_A)
-st.dataframe(df)
+st.dataframe(matches_rolling)
 def get_historical_data(df, group, cols, opp_cols):
     for i in range(len(group)):
         home_team = group['team'].iloc[i]
@@ -217,7 +218,7 @@ def get_historical_data(df, group, cols, opp_cols):
 # Example usage
 cols = ['gf', 'sh', 'save%','poss']
 opp_cols = ['save%_rolling','sh_rolling', 'gf_rolling']
-df = df.copy()  # Ensure that the original DataFrame is not modified
+df = matches_rolling.copy()  # Ensure that the original DataFrame is not modified
 group = matches_rolling_A
 matches_rolling_A = get_historical_data(df, group, cols, opp_cols)
 
