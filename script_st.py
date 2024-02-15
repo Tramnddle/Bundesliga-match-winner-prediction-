@@ -135,21 +135,19 @@ Opponent_name = {
 
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
-
+def custom_mean(values):
+    if values.isnull().all():
+        return np.nan
+    else:
+        return values.mean()
 # average goal per season and team
-average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
+average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean(skipna=False).reset_index()
 df = pd.merge(df, average_goal_st, on = ["team","season"])
 df[['gf','ga','average_ga_st','average_gf_st']] = df[['gf_x','ga_x','ga_y', 'gf_y']].rename(columns=
                                 {'gf_x': 'gf','ga_x':'ga', 'ga_y':'average_ga_st', 'gf_y': 'average_gf_st'})
 df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 
 st.dataframe(df)
-
-def custom_mean(values):
-    if values.isnull().all():
-        return np.nan
-    else:
-        return values.mean()
 
 # average goal per season
 average_goal_s = df.groupby('season')['gf'].agg(custom_mean).reset_index()
