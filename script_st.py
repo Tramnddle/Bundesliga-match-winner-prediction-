@@ -36,7 +36,7 @@ user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
 user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
-user_inputs_round = st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d")
+user_inputs_round = 'Matchweek ' + str(st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d"))
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 
 # Add new match to the dataframe:
