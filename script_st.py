@@ -184,9 +184,7 @@ historical_matches_1 = historical_matches_1[historical_matches_1['date'] < date]
 historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
 
         # Select opponent's last match
-last_match = historical_matches_1.sort_values(by='date', ascending=False).iloc[0].T
-st.dataframe(last_match)
-
+last_match = historical_matches_1.sort_values(by='date', ascending=False).iloc[0]
 
 cols = ['gf', 'sh', 'save%','poss']
 opp_cols = ['save%_rolling','sh_rolling', 'gf_rolling']       
@@ -206,7 +204,7 @@ new_cols_3 = [f'{c}_opp' for c in opp_cols]
 match_AB = pd.DataFrame([matches_rolling.iloc[-1]])
 match_AB[new_cols_1] = historical_data_1
 match_AB[new_cols_2] = historical_data_2
-match_AB[new_cols_3] = matches[opp_cols]
+match_AB[new_cols_3] = last_match[opp_cols]
 
 st.dataframe(match_AB)
 
