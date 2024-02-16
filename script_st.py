@@ -201,7 +201,7 @@ new_cols_1 = [f'{c}_hist_opp' for c in cols]
 new_cols_2 = [f'{c}_hist_home' for c in cols]
 new_cols_3 = [f'{c}_opp' for c in opp_cols]
 
-match_AB = pd.DataFrame([matches_rolling.iloc[-1]])
+match_AB = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_A)&(matches_rolling['opponent']==user_inputs_B)&(matches_rolling['date']==date)])
 match_AB[new_cols_1] = historical_data_1
 match_AB[new_cols_2] = historical_data_2
 match_AB[new_cols_3] = last_match[opp_cols]
