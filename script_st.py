@@ -184,7 +184,7 @@ historical_matches_1 = historical_matches_1[historical_matches_1['date'] < date]
 historical_matches_2 = historical_matches_2[historical_matches_2['date'] < date]
 
         # Select opponent's last match
-last_match = historical_matches_1.sort_values(by='date', ascending=False).iloc[0]
+last_match = historical_matches_1.sort_values(by='date', ascending=False).iloc[0].T
 st.dataframe(last_match)
 
 
