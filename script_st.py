@@ -30,8 +30,8 @@ teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
 
 df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
 
-user_inputs_A = st.text_input('Type in the name of team A', 'Dortmund')  # Example input
-user_inputs_B = st.text_input('Type in the name of team B', 'Mainz 05')
+user_inputs_A = st.text_input('Home Team', 'Dortmund')  # Example input
+user_inputs_B = st.text_input('Guess Team', 'Mainz 05')
 user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
