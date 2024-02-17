@@ -47,7 +47,7 @@ df["date"] = pd.to_datetime(df["date"])
 df["venue_code"] = df["venue"].astype("category").cat.codes
 df["team_code"] = df["team"].astype("category").cat.codes
 df["opp_code"] = df["opponent"].astype("category").cat.codes
-#matches_rolling_A["hour"] = matches_rolling_A["time"].str.replace(":.+", "", regex=True).astype("int")
+df["hour"] = df["time"].str.replace(":.+", "", regex=True).astype("int")
 df["day_code"] = df["date"].dt.dayofweek
 df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
 
@@ -143,7 +143,34 @@ df = df.drop(['gf_x','ga_x','gf_y','ga_y'], axis = 1)
 average_goal_sr = df.groupby(['season', 'round'])['gf'].mean().reset_index()
 df = pd.merge(df, average_goal_sr, on=["season", "round"])
 df[['gf','average_gf_sr']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sr'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
 
+# average goal per round
+average_goal_r = df.groupby('round')['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_r, on = "round")
+df[['gf','average_gf_r']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_r'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
+
+# average goal per season per venue
+average_goal_sv = df.groupby(['season','venue'])['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_sv, on = ["season","venue"])
+df[['gf','average_gf_sv']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_sv'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
+
+# average goal per round per team
+average_goal_rt = df.groupby(['round','team'])['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_rt, on = ["round","team"])
+df[['gf','average_gf_rt']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_rt'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
+
+# average goal per hour
+average_goal_h = df.groupby('hour')['gf'].mean().reset_index()
+df = pd.merge(df, average_goal_h, on='hour')
+df[['gf','average_gf_h']] = df[['gf_x','gf_y']].rename(columns={'gf_x': 'gf', 'gf_y': 'average_gf_h'})
+df = df.drop(['gf_x','gf_y'], axis = 1)
+
+df['total_t'] = df['average_ga_t'] + df['average_gf_t']
+df['total_st'] = df['average_ga_st'] + df['average_gf_st']
 
 df['total_goal'] = df['gf'] + df['ga']
 
@@ -158,7 +185,7 @@ def rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2):
     #group = group.dropna(subset=new_cols)
     return group
 
-cols_1 = ["gf",'ga','poss','sh', 'save%']
+cols_1 = ["gf",'ga','poss','sh', 'save%', 'total_goal']
 new_cols_1 = [f"{c}_rolling" for c in cols_1] 
 
 cols_2 = []
@@ -169,6 +196,12 @@ matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols
 matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1, cols_2, new_cols_1, new_cols_2))
 matches_rolling.index = matches_rolling.index.droplevel()
 st.dataframe(matches_rolling)
+
+import random
+import numpy as np
+matches_rolling['random_t'] = matches_rolling['total_t'].apply(lambda x: np.random.randint(x-2, x+4))
+matches_rolling['total_goal_rolling'].fillna(0, inplace=True)
+matches_rolling['random_total_goal'] = matches_rolling['total_goal_rolling'].apply(lambda x: np.random(x-2, x+4))
 
  # Head 2 head performance  
 home_team = user_inputs_A
