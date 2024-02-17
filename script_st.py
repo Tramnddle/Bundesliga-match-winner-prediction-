@@ -249,7 +249,7 @@ match_AB = match_AB[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
-match_AB = match_AB.sort_values(by='date').set_index('date', inplace=True)
+match_AB = match_AB.set_index('date', inplace=True)
 st.dataframe(match_AB)
 
 
