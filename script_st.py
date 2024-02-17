@@ -240,7 +240,7 @@ match_AB[new_cols_2] = historical_data_2
 match_AB[new_cols_3] = last_match[opp_cols]
 
 st.dataframe(match_AB)
-
+st.dataframe(df)
 
 
 
