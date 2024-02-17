@@ -242,8 +242,17 @@ match_AB[new_cols_1] = historical_data_1
 match_AB[new_cols_2] = historical_data_2
 match_AB[new_cols_3] = last_match[opp_cols]
 
+match_AB = match_AB[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
+                        'average_gf_s', 'average_gf_sr',  'average_gf_r', 'average_gf_t','average_ga_t','average_gf_st','average_ga_st',
+                        'average_gf_rt','average_gf_sv', 'average_gf_h', 'total_t', 'total_st', 'random_t','random_total_goal',
+                        'save%_rolling_opp', 'gf_rolling_opp',
+                        'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
+                        'gf_hist_home', 'poss_hist_home', 
+                        'venue_code','team_code', 'opp_code', 'day_code']]
+match_AB = match_AB.sort_values(by='date').set_index('date', inplace=True)
 st.dataframe(match_AB)
-st.dataframe(df)
+
+
 
 
 
