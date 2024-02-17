@@ -37,10 +37,10 @@ venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
 user_inputs_round = 'Matchweek ' + str(st.number_input("Enter the matchweek", min_value =1, max_value=34, step=1, format="%d"))
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
-user_inputs_time = st.time_input('Select match time')
+user_inputs_time = str(st.time_input('Select match time'))
 
 # Add new match to the dataframe:
-df.loc[len(df.index)] = [user_inputs_date,None,'Bundesliga',user_inputs_round,None,user_inputs_venue,None,None,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
+df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None,None,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
 
 df["date"] = pd.to_datetime(df["date"])
 
@@ -49,7 +49,7 @@ df["venue_code"] = df["venue"].astype("category").cat.codes
 df["team_code"] = df["team"].astype("category").cat.codes
 df["opp_code"] = df["opponent"].astype("category").cat.codes
 df["time"].fillna("", inplace=True)
-df["hour"] = df["time"].str.replace(":.+", "", regex=True).astype("int")
+df["hour"] = df["time"].replace(":.+", "", regex=True).astype("int")
 df["day_code"] = df["date"].dt.dayofweek
 df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
 
