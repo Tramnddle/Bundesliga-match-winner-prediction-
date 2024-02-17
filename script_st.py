@@ -203,7 +203,8 @@ import random
 import numpy as np
 matches_rolling['random_t'] = matches_rolling['total_t'].apply(lambda x: np.random.randint(x-2, x+4))
 matches_rolling['total_goal_rolling'].fillna(0, inplace=True)
-matches_rolling['random_total_goal'] = matches_rolling['total_goal_rolling'].apply(lambda x: np.random(x-2, x+4))
+matches_rolling['random_total_goal'] = matches_rolling['total_goal_rolling'].apply(lambda x: np.random.randint(x - 2, x + 5))
+
 
  # Head 2 head performance  
 home_team = user_inputs_A
