@@ -49,7 +49,8 @@ df["venue_code"] = df["venue"].astype("category").cat.codes
 df["team_code"] = df["team"].astype("category").cat.codes
 df["opp_code"] = df["opponent"].astype("category").cat.codes
 df["time"].fillna("", inplace=True)
-df["hour"] = df["time"].replace(":.+", "", regex=True).astype("int")
+df["hour"] = df["time"].str.extract(r'(\d+):').fillna("-1")
+df["hour"] = df["hour"].astype("int")
 df["day_code"] = df["date"].dt.dayofweek
 df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
 
