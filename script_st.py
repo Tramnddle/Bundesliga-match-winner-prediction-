@@ -57,6 +57,7 @@ Data_input = {'date':user_inputs_date,
               'team':user_inputs_A
               }
 #df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
+Data_input=pd.DataFrame(Data_input)
 df = df.append(Data_input)
 df["date"] = pd.to_datetime(df["date"])
 
