@@ -40,7 +40,7 @@ user_inputs_season = st.number_input('Enter the season', min_value=2014, max_val
 user_inputs_time = str(st.time_input('Select match time'))
 
 # Add new match to the dataframe:
-df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None,None,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
+df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
 
 df["date"] = pd.to_datetime(df["date"])
 
