@@ -219,9 +219,14 @@ matches_rolling.index = matches_rolling.index.droplevel()
 import random
 import numpy as np
 
-matches_rolling['random_t'] = matches_rolling['total_t'].apply(lambda x: np.random.randint(x-1, x+4))
+def generate_random_t(x):
+    lower_bound = max(x - 2, 0)  # Ensure the lower bound is non-negative
+    upper_bound = x + 4
+    return np.random.randint(lower_bound, upper_bound)
+
+matches_rolling['random_t'] = matches_rolling['total_t'].apply(generate_random_t)
 matches_rolling['total_goal_rolling'].fillna(0, inplace=True)
-matches_rolling['random_total_goal'] = matches_rolling['total_goal_rolling'].apply(lambda x: np.random.randint(x - 1, x + 5))
+matches_rolling['random_total_goal'] = matches_rolling['total_goal_rolling'].apply(generate_random_t)
 
 
  # Head 2 head performance  
