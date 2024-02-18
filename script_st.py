@@ -39,9 +39,25 @@ user_inputs_round = 'Matchweek ' + str(st.number_input("Enter the matchweek", mi
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 user_inputs_time = str(st.time_input('Select match time'))
 
+st.dataframe(df)
 # Add new match to the dataframe:
-df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
-
+Data_input = {'date':user_inputs_date,
+              'time':user_inputs_time,
+              'comp':'Bundesliga',
+              'round':user_inputs_round,
+              'day':None,
+              'venue':user_inputs_venue,
+              'gf': None,
+              'ga': None,
+              'opponent':user_inputs_B,
+              'poss': None,
+              'sh':None,
+              'save%':None,
+              'season':user_inputs_season,
+              'team':user_inputs_A
+              }
+#df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
+df = df.append(Data_input)
 df["date"] = pd.to_datetime(df["date"])
 
 # Convert categorical variables into numerical variables
