@@ -194,6 +194,8 @@ df['total_st'] = df['average_ga_st'] + df['average_gf_st']
 df['total_goal'] = df['gf'] + df['ga']
 
 df_A = df[df['team']==user_inputs_A]
+test = df[[(df_A['opponent']==user_inputs_B)&(df_A['date']==user_inputs_date)]]
+st.dataframe(test)
 # average of the last 3 games
 def rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2):
     group = group.sort_values("date")
@@ -214,8 +216,6 @@ group = df_A
 matches_rolling_A = rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2)
 matches_rolling = df.groupby('team').apply(lambda x: rolling_averages(x, cols_1, cols_2, new_cols_1, new_cols_2))
 matches_rolling.index = matches_rolling.index.droplevel()
-test = matches_rolling_A[[(matches_rolling_A['team']==user_inputs_A)&(matches_rolling_A['opponent']==user_inputs_B)&(matches_rolling_A['date']==user_inputs_date)]]
-st.dataframe(test)
 
 import random
 import numpy as np
