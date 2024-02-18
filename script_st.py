@@ -39,38 +39,6 @@ user_inputs_round = 'Matchweek ' + str(st.number_input("Enter the matchweek", mi
 user_inputs_season = st.number_input('Enter the season', min_value=2014, max_value=2050, step = 1 )
 user_inputs_time = str(st.time_input('Select match time'))
 
-# Add new match to the dataframe:
-Data_input = {'date':user_inputs_date,
-              'time':user_inputs_time,
-              'comp':'Bundesliga',
-              'round':user_inputs_round,
-              'day':None,
-              'venue':user_inputs_venue,
-              'gf': None,
-              'ga': None,
-              'opponent':user_inputs_B,
-              'poss': None,
-              'sh':None,
-              'save%':None,
-              'season':user_inputs_season,
-              'team':user_inputs_A
-              }
-df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
-
-df["date"] = pd.to_datetime(df["date"])
-df['time'] = df['time'].astype(str)
-
-st.dataframe(df)
-# Convert categorical variables into numerical variables
-df["venue_code"] = df["venue"].astype("category").cat.codes
-df["team_code"] = df["team"].astype("category").cat.codes
-df["opp_code"] = df["opponent"].astype("category").cat.codes
-df["time"].fillna("", inplace=True)
-df["hour"] = df["time"].str.extract(r'(\d+):').fillna("-1")
-df["hour"] = df["hour"].astype("int")
-df["day_code"] = df["date"].dt.dayofweek
-df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
-
 # rename and match the teams name of home team and opponent team columns
 Team_name = {
     'Arminia':'Arminia',
@@ -137,6 +105,38 @@ Opponent_name = {
 
 df['team'] = df['team'].map(Team_name)
 df['opponent'] = df['opponent'].map(Opponent_name)
+
+# Add new match to the dataframe:
+Data_input = {'date':user_inputs_date,
+              'time':user_inputs_time,
+              'comp':'Bundesliga',
+              'round':user_inputs_round,
+              'day':None,
+              'venue':user_inputs_venue,
+              'gf': None,
+              'ga': None,
+              'opponent':user_inputs_B,
+              'poss': None,
+              'sh':None,
+              'save%':None,
+              'season':user_inputs_season,
+              'team':user_inputs_A
+              }
+df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
+
+df["date"] = pd.to_datetime(df["date"])
+df['time'] = df['time'].astype(str)
+
+st.dataframe(df)
+# Convert categorical variables into numerical variables
+df["venue_code"] = df["venue"].astype("category").cat.codes
+df["team_code"] = df["team"].astype("category").cat.codes
+df["opp_code"] = df["opponent"].astype("category").cat.codes
+df["time"].fillna("", inplace=True)
+df["hour"] = df["time"].str.extract(r'(\d+):').fillna("-1")
+df["hour"] = df["hour"].astype("int")
+df["day_code"] = df["date"].dt.dayofweek
+df['round']=df['round'].apply(lambda x: x.replace('Matchweek', '')).astype('int')
 
 # average goal per season and team
 average_goal_st= df.groupby(['team', 'season'])[['gf','ga']].mean().reset_index()
