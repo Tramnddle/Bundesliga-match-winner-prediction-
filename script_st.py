@@ -194,7 +194,7 @@ df['total_st'] = df['average_ga_st'] + df['average_gf_st']
 df['total_goal'] = df['gf'] + df['ga']
 
 df_A = df[df['team']==user_inputs_A]
-test = df[[(df_A['opponent']==user_inputs_B)&(df_A['date']==user_inputs_date)]]
+test = df_A[[(df_A['opponent']==user_inputs_B)&(df_A['date']==user_inputs_date)]]
 st.dataframe(test)
 # average of the last 3 games
 def rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2):
