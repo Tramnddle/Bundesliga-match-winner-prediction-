@@ -220,9 +220,12 @@ import random
 import numpy as np
 
 def generate_random_t(x):
-    lower_bound = max(x - 2, 0)  # Ensure the lower bound is non-negative
+    lower_bound = max(0, x - 2)  # Ensure the lower bound is non-negative
     upper_bound = x + 4
-    return np.random.randint(lower_bound, upper_bound)
+    if lower_bound < upper_bound:  # Ensure valid range
+        return np.random.randint(lower_bound, upper_bound)
+    else:
+        return lower_bound  # Or handle the error condition as appropriate
 
 matches_rolling['random_t'] = matches_rolling['total_t'].apply(generate_random_t)
 matches_rolling['total_goal_rolling'].fillna(0, inplace=True)
@@ -297,3 +300,4 @@ model = joblib.load(local_model_file)
 # Predict gf A:
 Predicted_gf_A = model.predict(match_AB)
 st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
+
