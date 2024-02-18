@@ -194,8 +194,6 @@ df['total_st'] = df['average_ga_st'] + df['average_gf_st']
 df['total_goal'] = df['gf'] + df['ga']
 
 df_A = df[df['team']==user_inputs_A]
-test = df_A[(df_A['opponent']==user_inputs_B)&(df_A['date']==user_inputs_date)]
-st.dataframe(test)
 
 # average of the last 3 games
 def rolling_averages(group, cols_1, cols_2, new_cols_1, new_cols_2):
@@ -277,7 +275,7 @@ from google.cloud import storage
 client = storage.Client()
 
 # Define your Google Cloud Storage bucket name and model file path
-bucket_name = 'bundesliga_0410'
+bucket_name = 'lgbm_model'
 model_blob_name = 'lgb_model.pkl'  # Path within the bucket
 # Get the bucket
 bucket = client.get_bucket(bucket_name)
