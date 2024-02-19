@@ -318,5 +318,12 @@ model = lgb.Booster(model_file='lgbm.txt')
 Predicted_gf_A = round(model.predict(match_AB)[0],2)
 # Predict gf B:
 Predicted_gf_B = round(model.predict(match_BA)[0],2)
-st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
-st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
+
+match_AB_show = df[['date','time','comp','venue','round','season','team','opponent']][(df['team']==user_inputs_A)&(df['opponent']==user_inputs_B)&(df['date']==date)]
+
+st.dataframe(match_AB_show)
+
+# Display the text only when needed
+if st.button("Show Predictions"):
+    st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}');
+    st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
