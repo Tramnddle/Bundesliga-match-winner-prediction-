@@ -285,7 +285,7 @@ match_BA [['save%_rolling_opp', 'gf_rolling_opp',
           'gf_hist_opp',  'poss_hist_opp', 
           'gf_hist_home', 'poss_hist_home', ]] = match_AB [['save%_rolling', 'gf_rolling','gf_hist_home', 'poss_hist_home', 'gf_hist_opp','poss_hist_opp']]
 match_BA['save%_hist_opp']= historical_data_2['save%']
-match_BA = [['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
+match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
                         'average_gf_s', 'average_gf_sr',  'average_gf_r', 'average_gf_t','average_ga_t','average_gf_st','average_ga_st',
                         'average_gf_rt','average_gf_sv', 'average_gf_h', 'total_t', 'total_st', 'random_t','random_total_goal',
                         'save%_rolling_opp', 'gf_rolling_opp',
