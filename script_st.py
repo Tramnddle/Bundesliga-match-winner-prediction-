@@ -278,6 +278,8 @@ match_AB = match_AB[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
 match_AB = match_AB.set_index('date', inplace=False)
 st.dataframe(match_AB)
 
+match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
+
 from google.cloud import storage
 
 # Initialize Google Cloud Storage client
@@ -299,7 +301,7 @@ blob.download_to_filename(local_model_file)
 model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
-Predicted_gf_A = str(model.predict(match_AB))
+Predicted_gf_A = model.predict(match_AB)[1:-1]
 
 st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
 
