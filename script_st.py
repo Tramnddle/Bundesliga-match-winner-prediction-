@@ -10,7 +10,6 @@ from st_files_connection import FilesConnection
 import gcsfs
 import os
 import lightgbm as lgb
-import joblib
 
 
 secrets = st.secrets["connections_gcs"]
@@ -280,7 +279,13 @@ match_AB = match_AB.set_index('date', inplace=False)
 st.dataframe(match_AB)
 
 match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
-match_BA[['save%_rolling_opp', 'gf_rolling_opp', 'gf_hist_opp', 'poss_hist_opp', 'gf_hist_home', 'poss_hist_home']] = match_AB[['save%_rolling', 'gf_rolling', 'gf_hist_home', 'poss_hist_home', 'gf_hist_opp', 'poss_hist_opp']]
+#match_BA[['save%_rolling_opp', 'gf_rolling_opp', 'gf_hist_opp', 'poss_hist_opp', 'gf_hist_home', 'poss_hist_home']] = match_AB[['save%_rolling', 'gf_rolling', 'gf_hist_home', 'poss_hist_home', 'gf_hist_opp', 'poss_hist_opp']]
+match_BA['save%_rolling_opp'] = match_AB['save%_rolling']
+match_BA['gf_rolling_opp'] = match_AB['gf_rolling']
+match_BA['gf_hist_opp'] = match_AB['gf_hist_home']
+match_BA['poss_hist_opp'] = historical_data_2['poss']
+match_BA['gf_hist_home'] = historical_data_1['gf']
+match_BA['poss_hist_home'] = historical_data_1['poss']
 match_BA['save%_hist_opp']= historical_data_2['save%']
 match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
                         'average_gf_s', 'average_gf_sr',  'average_gf_r', 'average_gf_t','average_ga_t','average_gf_st','average_ga_st',
@@ -309,7 +314,6 @@ local_model_file = 'lgbm.txt'
 blob.download_to_filename(local_model_file)
 
 # Load the LightGBM model
-#model = joblib.load(local_model_file)
 model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
