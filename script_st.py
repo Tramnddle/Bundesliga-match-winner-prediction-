@@ -123,7 +123,7 @@ Data_input = {'date':user_inputs_date,
               'team':user_inputs_A
               }
 df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
-
+df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_A,None,None,None,user_inputs_season,user_inputs_B]
 df["date"] = pd.to_datetime(df["date"])
 df['time'] = df['time'].astype(str)
 
