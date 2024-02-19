@@ -281,9 +281,9 @@ match_AB = match_AB.set_index('date', inplace=False)
 st.dataframe(match_AB)
 
 match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
-match_BA ['save%_rolling_opp', 'gf_rolling_opp',
+match_BA [['save%_rolling_opp', 'gf_rolling_opp',
           'gf_hist_opp',  'poss_hist_opp', 
-          'gf_hist_home', 'poss_hist_home', ] = match_AB ['save%_rolling', 'gf_rolling','gf_hist_home', 'poss_hist_home', 'gf_hist_opp','poss_hist_opp']
+          'gf_hist_home', 'poss_hist_home', ]] = match_AB [['save%_rolling', 'gf_rolling','gf_hist_home', 'poss_hist_home', 'gf_hist_opp','poss_hist_opp']]
 match_BA['save%_hist_opp']= historical_data_2['save%']
 match_BA = [['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
                         'average_gf_s', 'average_gf_sr',  'average_gf_r', 'average_gf_t','average_ga_t','average_gf_st','average_ga_st',
@@ -313,8 +313,8 @@ blob.download_to_filename(local_model_file)
 model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
-Predicted_gf_A = model.predict(match_AB)[0]
+Predicted_gf_A = round(model.predict(match_AB)[0],2)
 # Predict gf B:
-Predicted_gf_B = model.predict(match_BA)[0]
+Predicted_gf_B = round(model.predict(match_BA)[0],2)
 st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
 st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
