@@ -299,8 +299,7 @@ blob.download_to_filename(local_model_file)
 model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
-Predicted_gf_A = model.predict(match_AB)
-Predicted_gf_A = ' and '.join(Predicted_gf_A)
+Predicted_gf_A = str(model.predict(match_AB))
 
-st.write(f'Predicted goal for {user_inputs_A} : {str(Predicted_gf_A)}')
+st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
 
