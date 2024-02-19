@@ -282,7 +282,7 @@ match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)
 #match_BA[['save%_rolling_opp', 'gf_rolling_opp', 'gf_hist_opp', 'poss_hist_opp', 'gf_hist_home', 'poss_hist_home']] = match_AB[['save%_rolling', 'gf_rolling', 'gf_hist_home', 'poss_hist_home', 'gf_hist_opp', 'poss_hist_opp']]
 match_BA['save%_rolling_opp'] = match_AB['save%_rolling']
 match_BA['gf_rolling_opp'] = match_AB['gf_rolling']
-match_BA['gf_hist_opp'] = match_AB['gf_hist_home']
+match_BA['gf_hist_opp'] = historical_data_2['gf']
 match_BA['poss_hist_opp'] = historical_data_2['poss']
 match_BA['gf_hist_home'] = historical_data_1['gf']
 match_BA['poss_hist_home'] = historical_data_1['poss']
