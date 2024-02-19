@@ -296,7 +296,7 @@ blob.download_to_filename(local_model_file)
 
 # Load the LightGBM model
 #model = joblib.load(local_model_file)
-lgb.Booster(model_file='lgbm.txt')
+model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
 Predicted_gf_A = model.predict(match_AB)
