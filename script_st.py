@@ -330,3 +330,6 @@ st.dataframe(match_AB_show)
 if st.button("Show Predictions"):
     st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}');
     st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
+
+st.write("Columns in match_BA:", match_BA.columns)
+st.write("Columns in match_AB:", match_AB.columns)
