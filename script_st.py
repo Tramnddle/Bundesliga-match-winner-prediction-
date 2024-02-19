@@ -123,7 +123,9 @@ Data_input = {'date':user_inputs_date,
               'team':user_inputs_A
               }
 df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
-df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_A,None,None,None,user_inputs_season,user_inputs_B]
+# Determine the second venue option
+second_venue_option = 'Home' if user_inputs_venue == 'Away' else 'Away'
+df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,second_venue_option,None, None, user_inputs_A,None,None,None,user_inputs_season,user_inputs_B]
 df["date"] = pd.to_datetime(df["date"])
 df['time'] = df['time'].astype(str)
 
@@ -279,7 +281,17 @@ match_AB = match_AB.set_index('date', inplace=False)
 st.dataframe(match_AB)
 
 match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
-
+match_BA ['save%_rolling_opp', 'gf_rolling_opp',
+          'gf_hist_opp',  'poss_hist_opp', 
+          'gf_hist_home', 'poss_hist_home', ] = match_AB ['save%_rolling', 'gf_rolling','gf_hist_home', 'poss_hist_home', 'gf_hist_opp','poss_hist_opp']
+match_BA['save%_hist_opp']= historical_data_2['save%']
+match_BA = [['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'save%_rolling', 'poss_rolling',
+                        'average_gf_s', 'average_gf_sr',  'average_gf_r', 'average_gf_t','average_ga_t','average_gf_st','average_ga_st',
+                        'average_gf_rt','average_gf_sv', 'average_gf_h', 'total_t', 'total_st', 'random_t','random_total_goal',
+                        'save%_rolling_opp', 'gf_rolling_opp',
+                        'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
+                        'gf_hist_home', 'poss_hist_home', 
+                        'venue_code','team_code', 'opp_code', 'day_code']]
 from google.cloud import storage
 
 # Initialize Google Cloud Storage client
@@ -302,6 +314,7 @@ model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
 Predicted_gf_A = model.predict(match_AB)[0]
-
+# Predict gf B:
+Predicted_gf_B = model.predict(match_BA)[0]
 st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
-
+st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
