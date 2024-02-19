@@ -129,7 +129,6 @@ df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inp
 df["date"] = pd.to_datetime(df["date"])
 df['time'] = df['time'].astype(str)
 
-st.dataframe(df)
 # Convert categorical variables into numerical variables
 df["venue_code"] = df["venue"].astype("category").cat.codes
 df["team_code"] = df["team"].astype("category").cat.codes
@@ -292,7 +291,9 @@ match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
+match_AB = match_AB.set_index('date', inplace=False)
 st.write(match_BA) 
+
 from google.cloud import storage
 
 # Initialize Google Cloud Storage client
