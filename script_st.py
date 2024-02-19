@@ -279,6 +279,7 @@ match_AB = match_AB.set_index('date', inplace=False)
 st.dataframe(match_AB)
 
 match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
+st.dataframe(match_BA)
 #match_BA[['save%_rolling_opp', 'gf_rolling_opp', 'gf_hist_opp', 'poss_hist_opp', 'gf_hist_home', 'poss_hist_home']] = match_AB[['save%_rolling', 'gf_rolling', 'gf_hist_home', 'poss_hist_home', 'gf_hist_opp', 'poss_hist_opp']]
 match_BA['save%_rolling_opp'] = match_AB['save%_rolling']
 match_BA['gf_rolling_opp'] = match_AB['gf_rolling']
