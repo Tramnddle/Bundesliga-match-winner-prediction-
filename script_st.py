@@ -291,7 +291,7 @@ match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
-match_AB = match_AB.set_index('date', inplace=False)
+match_BA = match_BA.set_index('date', inplace=False)
 st.write(match_BA) 
 
 from google.cloud import storage
