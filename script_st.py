@@ -325,3 +325,8 @@ st.dataframe(match_AB_show)
 if st.button("Show Predictions"):
     st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}');
     st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
+
+if match_BA.index.equals(match_AB.index):
+    print("The DataFrames have the same index.")
+else:
+    print("The DataFrames do not have the same index.")
