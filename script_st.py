@@ -285,13 +285,13 @@ client = storage.Client()
 
 # Define your Google Cloud Storage bucket name and model file path
 bucket_name = 'lgbm_model'
-model_blob_name = 'gs://lgbm_model/lgb_model.pkl'  # Path within the bucket
+model_blob_name = 'lgbm.txt'  # Path within the bucket
 # Get the bucket
 bucket = client.get_bucket(bucket_name)
 
 # Download the model file from Google Cloud Storage
 blob = bucket.blob(model_blob_name)
-local_model_file = 'lgb_model.pkl'
+local_model_file = 'lgbm.txt'
 blob.download_to_filename(local_model_file)
 
 # Load the LightGBM model
