@@ -292,6 +292,7 @@ match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_opp',  'poss_hist_opp', 'save%_hist_opp', 
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
+st.write(match_BA) 
 from google.cloud import storage
 
 # Initialize Google Cloud Storage client
