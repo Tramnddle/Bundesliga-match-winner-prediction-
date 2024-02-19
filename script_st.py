@@ -301,7 +301,7 @@ blob.download_to_filename(local_model_file)
 model = lgb.Booster(model_file='lgbm.txt')
 
 # Predict gf A:
-Predicted_gf_A = model.predict(match_AB)[1:-1]
+Predicted_gf_A = model.predict(match_AB)[0]
 
 st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}')
 
