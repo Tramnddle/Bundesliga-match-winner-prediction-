@@ -329,4 +329,11 @@ st.dataframe(match_AB_show)
 if st.button("Show Predictions"):
     st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}');
     st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
-
+    
+st.write('Do you have a good day?')
+if st.button("Yes"):
+    st.image('https://storage.googleapis.com/bundesliga_0410/giphy%20(1).gif');
+    st.write('HAPPY BIRTHDAY Vollie :D')
+if st.button('No'):
+    st.write('let go party');
+    
