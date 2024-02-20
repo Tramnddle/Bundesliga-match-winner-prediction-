@@ -276,7 +276,7 @@ match_AB = match_AB[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
 match_AB = match_AB.set_index('date', inplace=False)
-st.dataframe(match_AB)
+
 
 match_BA = pd.DataFrame(matches_rolling[(matches_rolling['team']==user_inputs_B)&(matches_rolling['opponent']==user_inputs_A)&(matches_rolling['date']==date)])
 match_BA[['save%_rolling_opp', 'gf_rolling_opp', 'gf_hist_opp', 'poss_hist_opp', 'gf_hist_home', 'poss_hist_home']] = match_AB[['save%_rolling', 'gf_rolling', 'gf_hist_home', 'poss_hist_home', 'gf_hist_opp', 'poss_hist_opp']].iloc[0]
@@ -295,7 +295,6 @@ match_BA = match_BA[['date','round', 'gf_rolling','ga_rolling','sh_rolling', 'sa
                         'gf_hist_home', 'poss_hist_home', 
                         'venue_code','team_code', 'opp_code', 'day_code']]
 match_BA = match_BA.set_index('date', inplace=False)
-st.write(match_BA) 
 
 from google.cloud import storage
 
@@ -345,9 +344,8 @@ image_no = Image.open(io.BytesIO(image_bytes1))
 
 st.write('Have you said happy birthday to Vollie?')
 if st.button("Yes"):
-    st.image(image_yes,caption="❤️18.03❤️", use_column_width=True);
-    st.write("https://giphy.com/embed/kaMwwM91UCxstRfvA3", width="360", height="480")
+    st.image(image_yes,caption="❤️18.03❤️", use_column_width=True)
     
 if st.button("Not yet"):   
-    st.image(image_no,caption="❤️18.03❤️", use_column_width=True);
-    st.write('Happy birthday, Vollie :D')
+    st.image(image_no,caption="Let's go party", use_column_width=True);
+    st.write("https://giphy.com/embed/kaMwwM91UCxstRfvA3",use_column_width=True)
