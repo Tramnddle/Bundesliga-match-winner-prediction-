@@ -348,4 +348,4 @@ if st.button("Yes"):
     
 if st.button("Not yet"):   
     st.image(image_no,caption="Let's go party", use_column_width=True);
-    st.write("https://giphy.com/embed/kaMwwM91UCxstRfvA3",use_column_width=True)
+   
