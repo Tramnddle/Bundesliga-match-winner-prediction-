@@ -333,7 +333,7 @@ if st.button("Show Predictions"):
 # import image in GCS
 image_blob_name = 'gs://lgbm_model/Subject.png' 
 blob_image=bucket.blob(image_blob_name)
-image_url = blob_image.generate_signed_url()
+image_url = blob_image.generate_signed_url(expiration=3600)
 
 st.write('Do you have a good day?')
 if st.button("Yes"):
