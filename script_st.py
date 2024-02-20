@@ -335,7 +335,7 @@ from PIL import Image
 import io
 
 image_blob_name1 = 'Subject.png' 
-image_blob_name2 = 'Subject(2).png'
+image_blob_name2 = 'Subject (2).png'
 blob_image1=bucket.blob(image_blob_name1)
 blob_image2=bucket.blob(image_blob_name2)
 image_bytes1 = blob_image1.download_as_string()
