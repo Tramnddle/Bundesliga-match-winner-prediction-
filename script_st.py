@@ -332,8 +332,9 @@ if st.button("Show Predictions"):
     
 st.write('Do you have a good day?')
 if st.button("Yes"):
-    st.image('https://storage.googleapis.com/bundesliga_0410/giphy%20(1).gif');
-    st.write('HAPPY BIRTHDAY Vollie :D')
+    st.image('https://storage.googleapis.com/bundesliga_0410/giphy%20(1).gif',caption="Happy birthday, Vollie :D", use_column_width=True);
+    st.image('<div class="tenor-gif-embed" data-postid="5643801406635007370" data-share-method="host" data-aspect-ratio="1.33155" data-width="100%"><a href="https://tenor.com/view/funny-birthday-funny-happy-birthday-happy-birthday-gif-funny-happy-birthday-funny-gif-gif-5643801406635007370">Funny Birthday Funny Happy Birthday GIF</a>from <a href="https://tenor.com/search/funny+birthday-gifs">Funny Birthday GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>')
+    
 if st.button('No'):
     st.write('let go party');
     
