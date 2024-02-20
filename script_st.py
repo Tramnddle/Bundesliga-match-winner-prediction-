@@ -331,13 +331,16 @@ if st.button("Show Predictions"):
     st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
 
 # import image in GCS
+from PIL import Image
+import io
 image_blob_name = 'gs://lgbm_model/Subject.png' 
 blob_image=bucket.blob(image_blob_name)
-image_url = blob_image.generate_signed_url(expiration=3600)
+image_bytes = blob_image.download_as_string()
+image_yes = Image.open(io.BytesIO(image_bytes))
 
 st.write('Do you have a good day?')
 if st.button("Yes"):
-    st.image(image_url,caption="Happy birthday, Vollie :D", use_column_width=True);
+    st.image(image_yes,caption="Happy birthday, Vollie :D", use_column_width=True);
     
     
 if st.button('No'):
