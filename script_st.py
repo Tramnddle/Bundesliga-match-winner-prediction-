@@ -329,11 +329,16 @@ st.dataframe(match_AB_show)
 if st.button("Show Predictions"):
     st.write(f'Predicted goal for {user_inputs_A} : {Predicted_gf_A}');
     st.write(f'Predicted goal for {user_inputs_B} : {Predicted_gf_B}')
-    
+
+# import image in GCS
+image_blob_name = 'Subject.png' 
+blob_image=bucket.blob(image_blob_name)
+image_url = blob_image.generate_signed_url('Subject.png')
+
 st.write('Do you have a good day?')
 if st.button("Yes"):
-    st.image('gs://bundesliga_0410/giphy (1).gif',caption="Happy birthday, Vollie :D", use_column_width=True);
-    st.image('')
+    st.image(image_url,caption="Happy birthday, Vollie :D", use_column_width=True);
+    
     
 if st.button('No'):
     st.write('let go party');
