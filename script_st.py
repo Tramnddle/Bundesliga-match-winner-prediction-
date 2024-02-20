@@ -333,17 +333,21 @@ if st.button("Show Predictions"):
 # import image in GCS
 from PIL import Image
 import io
-image_blob_name = 'Subject.png' 
-blob_image=bucket.blob(image_blob_name)
-image_bytes = blob_image.download_as_string()
-image_yes = Image.open(io.BytesIO(image_bytes))
 
-st.write('Do you have a good day?')
+image_blob_name1 = 'Subject.png' 
+image_blob_name2 = 'Subject(2).png'
+blob_image1=bucket.blob(image_blob_name1)
+blob_image2=bucket.blob(image_blob_name2)
+image_bytes1 = blob_image1.download_as_string()
+image_bytes2 = blob_image2.download_as_string()
+image_yes = Image.open(io.BytesIO(image_bytes2))
+image_no = Image.open(io.BytesIO(image_bytes1))
+
+st.write('Have you said happy birthday to Vollie?')
 if st.button("Yes"):
-    st.image(image_yes,caption="Happy birthday, Vollie :D", use_column_width=True);
+    st.image(image_yes,caption="❤️18.03❤️", use_column_width=True);
+    st.write("https://giphy.com/embed/kaMwwM91UCxstRfvA3", width="360", height="480")
     
-    
-if st.button('No'):
-    st.write('let go party');
-    st.image('gs://bundesliga_0410/Subject.png')
-    
+if st.button("Not yet"):   
+    st.image(image_no,caption="❤️18.03❤️", use_column_width=True);
+    st.write('Happy birthday, Vollie :D')
