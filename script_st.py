@@ -332,10 +332,10 @@ if st.button("Show Predictions"):
     
 st.write('Do you have a good day?')
 if st.button("Yes"):
-    st.image('https://storage.googleapis.com/bundesliga_0410/giphy%20(1).gif',caption="Happy birthday, Vollie :D", use_column_width=True);
-    st.image('https://tenor.com/en-GB/view/funny-birthday-funny-happy-birthday-happy-birthday-gif-funny-happy-birthday-funny-gif-gif-5643801406635007370')
+    st.image('gs://bundesliga_0410/giphy (1).gif',caption="Happy birthday, Vollie :D", use_column_width=True);
+    st.image('')
     
 if st.button('No'):
     st.write('let go party');
-    st.image('https://storage.googleapis.com/bundesliga_0410/Subject.png')
+    st.image('gs://bundesliga_0410/Subject.png')
     
