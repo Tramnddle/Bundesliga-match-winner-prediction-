@@ -121,6 +121,7 @@ Data_input = {'date':user_inputs_date,
               'season':user_inputs_season,
               'team':user_inputs_A
               }
+st.dataframe(df)
 df.loc[len(df.index)] = [user_inputs_date,user_inputs_time,'Bundesliga',user_inputs_round,None,user_inputs_venue,None, None, user_inputs_B,None,None,None,user_inputs_season,user_inputs_A]
 # Determine the second venue option
 second_venue_option = 'Home' if user_inputs_venue == 'Away' else 'Away'
