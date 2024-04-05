@@ -6479,51 +6479,65 @@ index,date,time,comp,round,day,venue,gf,ga,opponent,poss,sh,save%,season,team
 6477,2024-02-16,20:30,Bundesliga,Matchweek 22,Fri,Home,0.0,1.0,Werder Bremen,57.0,13.0,75.0,2024,Koln
 6478,2024-02-17,15:30,Bundesliga,Matchweek 22,Sat,Home,1.0,0.0,Augsburg,46.0,17.0,100.0,2024,Mainz 05
 6479,2024-02-17,15:30,Bundesliga,Matchweek 22,Sat,Home,1.0,2.0,Stuttgart,57.0,20.0,50.0,2024,Darmstadt 98
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,2.0,0.0,Darmstadt 98,67.0,20.0,100.0,2024,Bayer Leverkusen
-3,2024-02-10,18:30,Bundesliga,Matchweek 21,Sat,Home,3.0,0.0,Bayern Munich,39.0,14.0,100.0,2024,Bayer Leverkusen
-5,2024-02-23,20:30,Bundesliga,Matchweek 23,Fri,Home,2.0,1.0,Mainz 05,67.0,17.0,75.0,2024,Bayer Leverkusen
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,3.0,1.0,M'Gladbach,55.0,20.0,50.0,2024,Bayern Munich
-2,2024-02-10,18:30,Bundesliga,Matchweek 21,Sat,Away,0.0,3.0,Leverkusen,61.0,9.0,62.5,2024,Bayern Munich
-5,2024-02-24,18:30,Bundesliga,Matchweek 23,Sat,Home,2.0,1.0,RB Leipzig,57.0,16.0,83.3,2024,Bayern Munich
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,3.0,1.0,Freiburg,65.0,17.0,66.7,2024,Stuttgart
-3,2024-02-11,15:30,Bundesliga,Matchweek 21,Sun,Home,3.0,1.0,Mainz 05,61.0,11.0,83.3,2024,Stuttgart
-5,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,1.0,1.0,Köln,74.0,13.0,83.3,2024,Stuttgart
-2,2024-02-09,20:30,Bundesliga,Matchweek 21,Fri,Home,3.0,0.0,Freiburg,66.0,17.0,100.0,2024,Dortmund
-1,2024-02-04,17:30,Bundesliga,Matchweek 20,Sun,Home,2.0,0.0,Union Berlin,66.0,16.0,100.0,2024,RB Leipzig
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,2.0,2.0,Augsburg,58.0,8.0,50.0,2024,RB Leipzig
-5,2024-02-24,18:30,Bundesliga,Matchweek 23,Sat,Away,1.0,2.0,Bayern Munich,43.0,11.0,50.0,2024,RB Leipzig
-1,2024-02-03,18:30,Bundesliga,Matchweek 20,Sat,Away,0.0,2.0,Köln,59.0,11.0,50.0,2024,Eintracht Frankfurt
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,1.0,Bochum,53.0,9.0,80.0,2024,Eintracht Frankfurt
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,0.0,Mainz 05,41.0,6.0,100.0,2024,Werder Bremen
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,2.0,Heidenheim,65.0,15.0,33.3,2024,Werder Bremen
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,1.0,1.0,Darmstadt 98,55.0,15.0,66.7,2024,Werder Bremen
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,1.0,3.0,Stuttgart,35.0,6.0,66.7,2024,Freiburg
-2,2024-02-09,20:30,Bundesliga,Matchweek 21,Fri,Away,0.0,3.0,Dortmund,34.0,6.0,62.5,2024,Freiburg
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,2.0,1.0,Werder Bremen,35.0,11.0,66.7,2024,Heidenheim
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,2.0,2.0,Union Berlin,42.0,10.0,33.3,2024,Heidenheim
-1,2024-02-04,15:30,Bundesliga,Matchweek 20,Sun,Away,2.0,2.0,Wolfsburg,55.0,17.0,85.7,2024,Hoffenheim
-2,2024-02-11,17:30,Bundesliga,Matchweek 21,Sun,Home,1.0,1.0,Köln,57.0,10.0,0.0,2024,Hoffenheim
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,3.0,Bayern Munich,45.0,11.0,50.0,2024,Monchengladbach
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,0.0,0.0,Darmstadt 98,58.0,24.0,100.0,2024,Monchengladbach
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,5.0,2.0,Bochum,48.0,21.0,50.0,2024,Monchengladbach
-1,2024-02-04,17:30,Bundesliga,Matchweek 20,Sun,Away,0.0,2.0,RB Leipzig,34.0,10.0,66.7,2024,Union Berlin
-2,2024-02-07,18:30,Bundesliga,Matchweek 18,Wed,Away,1.0,1.0,Mainz 05,54.0,16.0,83.3,2024,Union Berlin
-3,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,0.0,Wolfsburg,42.0,8.0,100.0,2024,Union Berlin
-5,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,2.0,2.0,Heidenheim,58.0,12.0,50.0,2024,Union Berlin
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,1.0,1.0,Augsburg,49.0,10.0,100.0,2024,Bochum
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,1.0,1.0,Eint Frankfurt,47.0,14.0,50.0,2024,Bochum
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,2.0,5.0,M'Gladbach,52.0,16.0,33.3,2024,Bochum
-1,2024-02-04,15:30,Bundesliga,Matchweek 20,Sun,Home,2.0,2.0,Hoffenheim,45.0,13.0,71.4,2024,Wolfsburg
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,0.0,1.0,Union Berlin,58.0,17.0,0.0,2024,Wolfsburg
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,1.0,Bochum,51.0,13.0,75.0,2024,Augsburg
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,2.0,2.0,RB Leipzig,42.0,11.0,71.4,2024,Augsburg
-1,2024-02-03,18:30,Bundesliga,Matchweek 20,Sat,Home,2.0,0.0,Eint Frankfurt,41.0,15.0,100.0,2024,Koln
-2,2024-02-11,17:30,Bundesliga,Matchweek 21,Sun,Away,1.0,1.0,Hoffenheim,43.0,6.0,66.7,2024,Koln
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,1.0,1.0,Stuttgart,26.0,12.0,80.0,2024,Koln
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,0.0,1.0,Werder Bremen,59.0,23.0,0.0,2024,Mainz 05
-2,2024-02-07,18:30,Bundesliga,Matchweek 18,Wed,Home,1.0,1.0,Union Berlin,46.0,16.0,75.0,2024,Mainz 05
-3,2024-02-11,15:30,Bundesliga,Matchweek 21,Sun,Away,1.0,3.0,Stuttgart,39.0,17.0,57.1,2024,Mainz 05
-5,2024-02-23,20:30,Bundesliga,Matchweek 23,Fri,Away,1.0,2.0,Leverkusen,33.0,13.0,71.4,2024,Mainz 05
-1,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,0.0,2.0,Leverkusen,33.0,8.0,71.4,2024,Darmstadt 98
-2,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,0.0,0.0,M'Gladbach,42.0,10.0,100.0,2024,Darmstadt 98
-4,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,1.0,1.0,Werder Bremen,45.0,12.0,75.0,2024,Darmstadt 98
+6480,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,2.0,0.0,Darmstadt 98,67.0,20.0,100.0,2024,Bayer Leverkusen
+6481,2024-02-10,18:30,Bundesliga,Matchweek 21,Sat,Home,3.0,0.0,Bayern Munich,39.0,14.0,100.0,2024,Bayer Leverkusen
+6482,2024-02-23,20:30,Bundesliga,Matchweek 23,Fri,Home,2.0,1.0,Mainz 05,67.0,17.0,75.0,2024,Bayer Leverkusen
+6483,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,3.0,1.0,M'Gladbach,55.0,20.0,50.0,2024,Bayern Munich
+6484,2024-02-10,18:30,Bundesliga,Matchweek 21,Sat,Away,0.0,3.0,Leverkusen,61.0,9.0,62.5,2024,Bayern Munich
+6485,2024-02-24,18:30,Bundesliga,Matchweek 23,Sat,Home,2.0,1.0,RB Leipzig,57.0,16.0,83.3,2024,Bayern Munich
+6486,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,3.0,1.0,Freiburg,65.0,17.0,66.7,2024,Stuttgart
+6487,2024-02-11,15:30,Bundesliga,Matchweek 21,Sun,Home,3.0,1.0,Mainz 05,61.0,11.0,83.3,2024,Stuttgart
+6488,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,1.0,1.0,Köln,74.0,13.0,83.3,2024,Stuttgart
+6489,2024-02-09,20:30,Bundesliga,Matchweek 21,Fri,Home,3.0,0.0,Freiburg,66.0,17.0,100.0,2024,Dortmund
+6490,2024-02-04,17:30,Bundesliga,Matchweek 20,Sun,Home,2.0,0.0,Union Berlin,66.0,16.0,100.0,2024,RB Leipzig
+6491,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,2.0,2.0,Augsburg,58.0,8.0,50.0,2024,RB Leipzig
+6492,2024-02-24,18:30,Bundesliga,Matchweek 23,Sat,Away,1.0,2.0,Bayern Munich,43.0,11.0,50.0,2024,RB Leipzig
+6493,2024-02-03,18:30,Bundesliga,Matchweek 20,Sat,Away,0.0,2.0,Köln,59.0,11.0,50.0,2024,Eintracht Frankfurt
+6494,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,1.0,Bochum,53.0,9.0,80.0,2024,Eintracht Frankfurt
+6495,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,0.0,Mainz 05,41.0,6.0,100.0,2024,Werder Bremen
+6496,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,2.0,Heidenheim,65.0,15.0,33.3,2024,Werder Bremen
+6497,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,1.0,1.0,Darmstadt 98,55.0,15.0,66.7,2024,Werder Bremen
+6498,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,1.0,3.0,Stuttgart,35.0,6.0,66.7,2024,Freiburg
+6499,2024-02-09,20:30,Bundesliga,Matchweek 21,Fri,Away,0.0,3.0,Dortmund,34.0,6.0,62.5,2024,Freiburg
+6500,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,2.0,1.0,Werder Bremen,35.0,11.0,66.7,2024,Heidenheim
+6501,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,2.0,2.0,Union Berlin,42.0,10.0,33.3,2024,Heidenheim
+6502,2024-02-04,15:30,Bundesliga,Matchweek 20,Sun,Away,2.0,2.0,Wolfsburg,55.0,17.0,85.7,2024,Hoffenheim
+6503,2024-02-11,17:30,Bundesliga,Matchweek 21,Sun,Home,1.0,1.0,Köln,57.0,10.0,0.0,2024,Hoffenheim
+6504,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,3.0,Bayern Munich,45.0,11.0,50.0,2024,Monchengladbach
+6505,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,0.0,0.0,Darmstadt 98,58.0,24.0,100.0,2024,Monchengladbach
+6506,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,5.0,2.0,Bochum,48.0,21.0,50.0,2024,Monchengladbach
+6507,2024-02-04,17:30,Bundesliga,Matchweek 20,Sun,Away,0.0,2.0,RB Leipzig,34.0,10.0,66.7,2024,Union Berlin
+6508,2024-02-07,18:30,Bundesliga,Matchweek 18,Wed,Away,1.0,1.0,Mainz 05,54.0,16.0,83.3,2024,Union Berlin
+6509,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,1.0,0.0,Wolfsburg,42.0,8.0,100.0,2024,Union Berlin
+6510,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Home,2.0,2.0,Heidenheim,58.0,12.0,50.0,2024,Union Berlin
+6511,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,1.0,1.0,Augsburg,49.0,10.0,100.0,2024,Bochum
+6512,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,1.0,1.0,Eint Frankfurt,47.0,14.0,50.0,2024,Bochum
+6513,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,2.0,5.0,M'Gladbach,52.0,16.0,33.3,2024,Bochum
+6514,2024-02-04,15:30,Bundesliga,Matchweek 20,Sun,Home,2.0,2.0,Hoffenheim,45.0,13.0,71.4,2024,Wolfsburg
+6515,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,0.0,1.0,Union Berlin,58.0,17.0,0.0,2024,Wolfsburg
+6516,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Away,1.0,1.0,Bochum,51.0,13.0,75.0,2024,Augsburg
+6517,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Home,2.0,2.0,RB Leipzig,42.0,11.0,71.4,2024,Augsburg
+6518,2024-02-03,18:30,Bundesliga,Matchweek 20,Sat,Home,2.0,0.0,Eint Frankfurt,41.0,15.0,100.0,2024,Koln
+6519,2024-02-11,17:30,Bundesliga,Matchweek 21,Sun,Away,1.0,1.0,Hoffenheim,43.0,6.0,66.7,2024,Koln
+6520,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,1.0,1.0,Stuttgart,26.0,12.0,80.0,2024,Koln
+6521,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,0.0,1.0,Werder Bremen,59.0,23.0,0.0,2024,Mainz 05
+6522,2024-02-07,18:30,Bundesliga,Matchweek 18,Wed,Home,1.0,1.0,Union Berlin,46.0,16.0,75.0,2024,Mainz 05
+6523,2024-02-11,15:30,Bundesliga,Matchweek 21,Sun,Away,1.0,3.0,Stuttgart,39.0,17.0,57.1,2024,Mainz 05
+6524,2024-02-23,20:30,Bundesliga,Matchweek 23,Fri,Away,1.0,2.0,Leverkusen,33.0,13.0,71.4,2024,Mainz 05
+6525,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,0.0,2.0,Leverkusen,33.0,8.0,71.4,2024,Darmstadt 98
+6526,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,0.0,0.0,M'Gladbach,42.0,10.0,100.0,2024,Darmstadt 98
+6527,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,1.0,1.0,Werder Bremen,45.0,12.0,75.0,2024,Darmstadt 98
+0,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Away,2.0,2.0,Freiburg,62.0,20.0,66.7,2024,Bayern Munich
+0,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Away,3.0,2.0,Wolfsburg,58.0,6.0,0.0,2024,Stuttgart
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,0.0,Union Berlin,61.0,13.0,100.0,2024,Dortmund
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,4.0,1.0,Bochum,57.0,12.0,66.7,2024,RB Leipzig
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,1.0,Heidenheim,42.0,10.0,66.7,2024,Eintracht Frankfurt
+0,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Home,2.0,2.0,Bayern Munich,38.0,17.0,71.4,2024,Freiburg
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,6.0,0.0,Darmstadt 98,55.0,22.0,100.0,2024,Augsburg
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,2.0,Eint Frankfurt,58.0,15.0,60.0,2024,Heidenheim
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,1.0,1.0,Mainz 05,57.0,14.0,66.7,2024,Monchengladbach
+0,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Home,2.0,3.0,Stuttgart,42.0,12.0,33.3,2024,Wolfsburg
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,2.0,Dortmund,39.0,14.0,71.4,2024,Union Berlin
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,4.0,RB Leipzig,43.0,14.0,0.0,2024,Bochum
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,1.0,M'Gladbach,43.0,19.0,80.0,2024,Mainz 05
+0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,6.0,Augsburg,45.0,10.0,14.3,2024,Darmstadt 98

@@ -25,12 +25,11 @@ Teamlist = conn.read("gs://bundesliga_0410/Teamlist.csv", input_format="csv")
 st.title('Bundesliga match score prediction')
 
 # Create a dropdown menu
-teamname = st.selectbox('Football Team List: ', Teamlist['opponent'].tolist())
+user_inputs_A = st.selectbox('Home Team', Teamlist['opponent'].tolist())
+user_inputs_B = st.selectbox('Guess Team', Teamlist['opponent'].tolist())
 
 #df=df.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1)
 
-user_inputs_A = st.text_input('Home Team')  # Example input
-user_inputs_B = st.text_input('Guess Team')
 user_inputs_date = st.date_input('Select a date')
 venue = ['Home','Away']
 user_inputs_venue = st.selectbox('Select a venue',venue)
