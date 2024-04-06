@@ -1,0 +1,342 @@
+Wk,Day,Date,Time,Home,xG,Score,xG.1,Away,Attendance,Venue,Referee,Match Report,Notes,Season
+1.0,Fri,2023-08-18,20:30,Werder Bremen,0.6,0–4,2.8,Bayern Munich,42100.0,Wohninvest Weserstadion,Felix Zwayer,Match Report,,2024
+1.0,Sat,2023-08-19,15:30,Leverkusen,1.4,3–2,1.6,RB Leipzig,29464.0,BayArena,Felix Brych,Match Report,,2024
+1.0,Sat,2023-08-19,15:30,Wolfsburg,2.2,2–0,1.2,Heidenheim,22620.0,Volkswagen Arena,Florian Badstübner,Match Report,,2024
+1.0,Sat,2023-08-19,15:30,Stuttgart,3.0,5–0,0.8,Bochum,53000.0,MHPArena,Daniel Siebert,Match Report,,2024
+1.0,Sat,2023-08-19,15:30,Augsburg,2.3,4–4,1.7,M'Gladbach,30660.0,WWK Arena,Daniel Schlager,Match Report,,2024
+1.0,Sat,2023-08-19,15:30,Hoffenheim,1.4,1–2,2.6,Freiburg,25890.0,PreZero Arena,Sven Jablonski,Match Report,,2024
+1.0,Sat,2023-08-19,18:30,Dortmund,1.8,1–0,1.2,Köln,81365.0,Signal Iduna Park,Deniz Aytekin,Match Report,,2024
+1.0,Sun,2023-08-20,15:30,Union Berlin,1.9,4–1,2.3,Mainz 05,22012.0,Stadion An der Alten Försterei,Tobias Stieler,Match Report,,2024
+1.0,Sun,2023-08-20,17:30,Eint Frankfurt,1.5,1–0,0.5,Darmstadt 98,54000.0,Deutsche Bank Park,Harm Osmers,Match Report,,2024
+,,,,,,,,,,,,,,2024
+2.0,Fri,2023-08-25,20:30,RB Leipzig,1.8,5–1,1.1,Stuttgart,46084.0,Red Bull Arena,Frank Willenborg,Match Report,,2024
+2.0,Sat,2023-08-26,15:30,Bochum,1.0,1–1,1.3,Dortmund,26000.0,Vonovia Ruhrstadion,Robert Schröder,Match Report,,2024
+2.0,Sat,2023-08-26,15:30,Darmstadt 98,2.3,1–4,1.7,Union Berlin,17810.0,Merck-Stadion am Böllenfalltor,Patrick Ittrich,Match Report,,2024
+2.0,Sat,2023-08-26,15:30,Freiburg,2.4,1–0,1.0,Werder Bremen,34700.0,Europa-Park Stadion,Benjamin Brand,Match Report,,2024
+2.0,Sat,2023-08-26,15:30,Köln,0.9,1–2,1.7,Wolfsburg,49500.0,RheinEnergieSTADION,Matthias Jöllenbeck,Match Report,,2024
+2.0,Sat,2023-08-26,15:30,Heidenheim,2.4,2–3,3.0,Hoffenheim,15000.0,Voith-Arena,Robert Hartmann,Match Report,,2024
+2.0,Sat,2023-08-26,18:30,M'Gladbach,0.9,0–3,2.7,Leverkusen,54042.0,Stadion im Borussia-Park,Christian Dingert,Match Report,,2024
+2.0,Sun,2023-08-27,15:30,Mainz 05,1.2,1–1,1.1,Eint Frankfurt,33305.0,Mewa Arena,Bastian Dankert,Match Report,,2024
+2.0,Sun,2023-08-27,17:30,Bayern Munich,2.8,3–1,0.7,Augsburg,75000.0,Allianz Arena,Daniel Siebert,Match Report,,2024
+,,,,,,,,,,,,,,2024
+3.0,Fri,2023-09-01,20:30,Dortmund,3.4,2–2,2.1,Heidenheim,81365.0,Signal Iduna Park,Tobias Reichel,Match Report,,2024
+3.0,Sat,2023-09-02,15:30,Werder Bremen,2.7,4–0,0.5,Mainz 05,41000.0,Wohninvest Weserstadion,Robert Schröder,Match Report,,2024
+3.0,Sat,2023-09-02,15:30,Hoffenheim,2.0,3–1,1.2,Wolfsburg,17500.0,PreZero Arena,Felix Zwayer,Match Report,,2024
+3.0,Sat,2023-09-02,15:30,Leverkusen,2.8,5–1,0.4,Darmstadt 98,29653.0,BayArena,Sven Jablonski,Match Report,,2024
+3.0,Sat,2023-09-02,15:30,Augsburg,1.9,2–2,1.6,Bochum,27424.0,WWK Arena,Martin Petersen,Match Report,,2024
+3.0,Sat,2023-09-02,15:30,Stuttgart,1.7,5–0,1.0,Freiburg,54300.0,MHPArena,Felix Brych,Match Report,,2024
+3.0,Sat,2023-09-02,18:30,M'Gladbach,0.3,1–2,2.4,Bayern Munich,54042.0,Stadion im Borussia-Park,Deniz Aytekin,Match Report,,2024
+3.0,Sun,2023-09-03,15:30,Eint Frankfurt,1.1,1–1,0.9,Köln,54000.0,Deutsche Bank Park,Florian Badstübner,Match Report,,2024
+3.0,Sun,2023-09-03,17:30,Union Berlin,0.3,0–3,1.2,RB Leipzig,22012.0,Stadion An der Alten Försterei,Daniel Schlager,Match Report,,2024
+,,,,,,,,,,,,,,2024
+4.0,Fri,2023-09-15,20:30,Bayern Munich,2.1,2–2,2.1,Leverkusen,75000.0,Allianz Arena,Daniel Schlager,Match Report,,2024
+4.0,Sat,2023-09-16,15:30,Wolfsburg,0.4,2–1,1.1,Union Berlin,21917.0,Volkswagen Arena,Felix Brych,Match Report,,2024
+4.0,Sat,2023-09-16,15:30,Mainz 05,0.9,1–3,1.6,Stuttgart,30500.0,Mewa Arena,Harm Osmers,Match Report,,2024
+4.0,Sat,2023-09-16,15:30,Freiburg,1.0,2–4,2.3,Dortmund,34700.0,Europa-Park Stadion,Tobias Stieler,Match Report,,2024
+4.0,Sat,2023-09-16,15:30,Köln,1.0,1–3,1.0,Hoffenheim,49300.0,RheinEnergieSTADION,Daniel Siebert,Match Report,,2024
+4.0,Sat,2023-09-16,15:30,RB Leipzig,1.1,3–0,1.7,Augsburg,44746.0,Red Bull Arena,Sascha Stegemann,Match Report,,2024
+4.0,Sat,2023-09-16,18:30,Bochum,2.0,1–1,0.6,Eint Frankfurt,26000.0,Vonovia Ruhrstadion,Benjamin Brand,Match Report,,2024
+4.0,Sun,2023-09-17,15:30,Heidenheim,2.2,4–2,3.0,Werder Bremen,15000.0,Voith-Arena,Patrick Ittrich,Match Report,,2024
+4.0,Sun,2023-09-17,17:30,Darmstadt 98,1.2,3–3,3.9,M'Gladbach,17810.0,Merck-Stadion am Böllenfalltor,Timo Gerach,Match Report,,2024
+,,,,,,,,,,,,,,2024
+5.0,Fri,2023-09-22,20:30,Stuttgart,2.3,3–1,0.2,Darmstadt 98,54000.0,MHPArena,Matthias Jöllenbeck,Match Report,,2024
+5.0,Sat,2023-09-23,15:30,Bayern Munich,4.8,7–0,0.1,Bochum,75000.0,Allianz Arena,Robert Hartmann,Match Report,,2024
+5.0,Sat,2023-09-23,15:30,Union Berlin,1.6,0–2,2.0,Hoffenheim,20000.0,Stadion An der Alten Försterei,Deniz Aytekin,Match Report,,2024
+5.0,Sat,2023-09-23,15:30,Augsburg,0.8,2–1,0.6,Mainz 05,27310.0,WWK Arena,Marco Fritz,Match Report,,2024
+5.0,Sat,2023-09-23,15:30,Dortmund,1.7,1–0,0.5,Wolfsburg,81365.0,Signal Iduna Park,Sven Jablonski,Match Report,,2024
+5.0,Sat,2023-09-23,15:30,M'Gladbach,0.8,0–1,0.7,RB Leipzig,50122.0,Stadion im Borussia-Park,Robert Schröder,Match Report,,2024
+5.0,Sat,2023-09-23,18:30,Werder Bremen,2.1,2–1,1.3,Köln,42100.0,Wohninvest Weserstadion,Bastian Dankert,Match Report,,2024
+5.0,Sun,2023-09-24,15:30,Leverkusen,3.4,4–1,0.5,Heidenheim,29557.0,BayArena,Christian Dingert,Match Report,,2024
+5.0,Sun,2023-09-24,17:30,Eint Frankfurt,0.6,0–0,0.5,Freiburg,55800.0,Deutsche Bank Park,Felix Zwayer,Match Report,,2024
+,,,,,,,,,,,,,,2024
+6.0,Fri,2023-09-29,20:30,Hoffenheim,1.9,1–3,1.6,Dortmund,30150.0,PreZero Arena,Florian Badstübner,Match Report,,2024
+6.0,Sat,2023-09-30,15:30,Köln,0.7,0–2,2.5,Stuttgart,50000.0,RheinEnergieSTADION,Tobias Stieler,Match Report,,2024
+6.0,Sat,2023-09-30,15:30,Heidenheim,0.8,1–0,2.2,Union Berlin,15000.0,Voith-Arena,Sascha Stegemann,Match Report,,2024
+6.0,Sat,2023-09-30,15:30,Wolfsburg,3.2,2–0,1.3,Eint Frankfurt,28323.0,Volkswagen Arena,Frank Willenborg,Match Report,,2024
+6.0,Sat,2023-09-30,15:30,Bochum,1.7,1–3,2.9,M'Gladbach,26000.0,Vonovia Ruhrstadion,Felix Brych,Match Report,,2024
+6.0,Sat,2023-09-30,15:30,Mainz 05,0.5,0–3,1.1,Leverkusen,33305.0,Mewa Arena,Benjamin Brand,Match Report,,2024
+6.0,Sat,2023-09-30,18:30,RB Leipzig,0.7,2–2,2.3,Bayern Munich,47069.0,Red Bull Arena,Marco Fritz,Match Report,,2024
+6.0,Sun,2023-10-01,15:30,Darmstadt 98,2.4,4–2,1.5,Werder Bremen,17810.0,Merck-Stadion am Böllenfalltor,Martin Petersen,Match Report,,2024
+6.0,Sun,2023-10-01,17:30,Freiburg,1.0,2–0,0.8,Augsburg,33134.0,Europa-Park Stadion,Harm Osmers,Match Report,,2024
+,,,,,,,,,,,,,,2024
+7.0,Fri,2023-10-06,20:30,M'Gladbach,2.3,2–2,0.8,Mainz 05,51529.0,Stadion im Borussia-Park,Sven Jablonski,Match Report,,2024
+7.0,Sat,2023-10-07,15:30,RB Leipzig,2.5,0–0,0.4,Bochum,44269.0,Red Bull Arena,Timo Gerach,Match Report,,2024
+7.0,Sat,2023-10-07,15:30,Dortmund,1.6,4–2,1.4,Union Berlin,81365.0,Signal Iduna Park,Patrick Ittrich,Match Report,,2024
+7.0,Sat,2023-10-07,15:30,Augsburg,0.9,1–2,1.8,Darmstadt 98,29200.0,WWK Arena,Deniz Aytekin,Match Report,,2024
+7.0,Sat,2023-10-07,15:30,Stuttgart,2.7,3–1,1.2,Wolfsburg,52000.0,MHPArena,Daniel Siebert,Match Report,,2024
+7.0,Sat,2023-10-07,18:30,Werder Bremen,0.8,2–3,1.9,Hoffenheim,41000.0,Wohninvest Weserstadion,Christian Dingert,Match Report,,2024
+7.0,Sun,2023-10-08,15:30,Leverkusen,3.2,3–0,1.3,Köln,30210.0,BayArena,Felix Zwayer,Match Report,,2024
+7.0,Sun,2023-10-08,17:30,Bayern Munich,2.4,3–0,0.1,Freiburg,75000.0,Allianz Arena,Robert Schröder,Match Report,,2024
+7.0,Sun,2023-10-08,19:30,Eint Frankfurt,1.9,2–0,1.2,Heidenheim,55800.0,Deutsche Bank Park,Daniel Schlager,Match Report,,2024
+,,,,,,,,,,,,,,2024
+8.0,Fri,2023-10-20,20:30,Dortmund,2.6,1–0,0.4,Werder Bremen,81365.0,Signal Iduna Park,Felix Brych,Match Report,,2024
+8.0,Sat,2023-10-21,15:30,Freiburg,2.3,2–1,1.5,Bochum,33900.0,Europa-Park Stadion,Tobias Reichel,Match Report,,2024
+8.0,Sat,2023-10-21,15:30,Darmstadt 98,2.4,1–3,1.9,RB Leipzig,17810.0,Merck-Stadion am Böllenfalltor,Harm Osmers,Match Report,,2024
+8.0,Sat,2023-10-21,15:30,Wolfsburg,1.4,1–2,1.9,Leverkusen,28917.0,Volkswagen Arena,Marco Fritz,Match Report,,2024
+8.0,Sat,2023-10-21,15:30,Union Berlin,0.6,0–3,1.4,Stuttgart,22012.0,Stadion An der Alten Försterei,Bastian Dankert,Match Report,,2024
+8.0,Sat,2023-10-21,15:30,Hoffenheim,1.4,1–3,2.4,Eint Frankfurt,30150.0,PreZero Arena,Matthias Jöllenbeck,Match Report,,2024
+8.0,Sat,2023-10-21,18:30,Mainz 05,1.1,1–3,1.8,Bayern Munich,33305.0,Mewa Arena,Sascha Stegemann,Match Report,,2024
+8.0,Sun,2023-10-22,15:30,Köln,2.7,3–1,0.3,M'Gladbach,50000.0,RheinEnergieSTADION,Deniz Aytekin,Match Report,,2024
+8.0,Sun,2023-10-22,17:30,Heidenheim,1.5,2–5,2.5,Augsburg,15000.0,Voith-Arena,Tobias Stieler,Match Report,,2024
+,,,,,,,,,,,,,,2024
+9.0,Fri,2023-10-27,20:30,Bochum,1.4,2–2,0.4,Mainz 05,26000.0,Vonovia Ruhrstadion,Patrick Ittrich,Match Report,,2024
+9.0,Sat,2023-10-28,15:30,M'Gladbach,1.0,2–1,0.4,Heidenheim,51541.0,Stadion im Borussia-Park,Robert Hartmann,Match Report,,2024
+9.0,Sat,2023-10-28,15:30,Werder Bremen,0.8,2–0,0.6,Union Berlin,42100.0,Wohninvest Weserstadion,Tobias Stieler,Match Report,,2024
+9.0,Sat,2023-10-28,15:30,Augsburg,1.4,3–2,1.4,Wolfsburg,28000.0,WWK Arena,Daniel Schlager,Match Report,,2024
+9.0,Sat,2023-10-28,15:30,Stuttgart,3.6,2–3,1.7,Hoffenheim,53200.0,MHPArena,Felix Zwayer,Match Report,,2024
+9.0,Sat,2023-10-28,15:30,Bayern Munich,5.8,8–0,0.7,Darmstadt 98,75000.0,Allianz Arena,Martin Petersen,Match Report,,2024
+9.0,Sat,2023-10-28,18:30,RB Leipzig,4.2,6–0,0.9,Köln,46480.0,Red Bull Arena,Benjamin Brand,Match Report,,2024
+9.0,Sun,2023-10-29,15:30,Eint Frankfurt,2.2,3–3,2.2,Dortmund,56500.0,Deutsche Bank Park,Robert Schröder,Match Report,,2024
+9.0,Sun,2023-10-29,17:30,Leverkusen,1.4,2–1,0.9,Freiburg,30210.0,BayArena,Daniel Siebert,Match Report,,2024
+,,,,,,,,,,,,,,2024
+10.0,Fri,2023-11-03,20:30,Darmstadt 98,0.7,1–2,1.2,Bochum,17810.0,Merck-Stadion am Böllenfalltor,Marco Fritz,Match Report,,2024
+10.0,Sat,2023-11-04,15:30,Mainz 05,0.9,2–0,0.5,RB Leipzig,30100.0,Mewa Arena,Bastian Dankert,Match Report,,2024
+10.0,Sat,2023-11-04,15:30,Freiburg,3.3,3–3,2.2,M'Gladbach,34700.0,Europa-Park Stadion,Felix Brych,Match Report,,2024
+10.0,Sat,2023-11-04,15:30,Köln,2.0,1–1,2.6,Augsburg,49300.0,RheinEnergieSTADION,Christian Dingert,Match Report,,2024
+10.0,Sat,2023-11-04,15:30,Hoffenheim,1.7,2–3,1.0,Leverkusen,30150.0,PreZero Arena,Frank Willenborg,Match Report,,2024
+10.0,Sat,2023-11-04,15:30,Union Berlin,0.7,0–3,1.6,Eint Frankfurt,22012.0,Stadion An der Alten Försterei,Sven Jablonski,Match Report,,2024
+10.0,Sat,2023-11-04,18:30,Dortmund,1.0,0–4,3.2,Bayern Munich,81365.0,Signal Iduna Park,Deniz Aytekin,Match Report,,2024
+10.0,Sun,2023-11-05,15:30,Wolfsburg,1.6,2–2,1.2,Werder Bremen,28917.0,Volkswagen Arena,Tobias Reichel,Match Report,,2024
+10.0,Sun,2023-11-05,17:30,Heidenheim,1.2,2–0,2.6,Stuttgart,15000.0,Voith-Arena,Florian Badstübner,Match Report,,2024
+,,,,,,,,,,,,,,2024
+11.0,Fri,2023-11-10,20:30,M'Gladbach,1.5,4–0,0.5,Wolfsburg,45308.0,Stadion im Borussia-Park,Felix Zwayer,Match Report,,2024
+11.0,Sat,2023-11-11,15:30,Augsburg,1.0,1–1,0.8,Hoffenheim,28260.0,WWK Arena,Felix Brych,Match Report,,2024
+11.0,Sat,2023-11-11,15:30,Stuttgart,4.2,2–1,1.0,Dortmund,55000.0,MHPArena,Tobias Stieler,Match Report,,2024
+11.0,Sat,2023-11-11,15:30,Bayern Munich,2.0,4–2,0.9,Heidenheim,75000.0,Allianz Arena,Harm Osmers,Match Report,,2024
+11.0,Sat,2023-11-11,15:30,Darmstadt 98,0.5,0–0,0.7,Mainz 05,17810.0,Merck-Stadion am Böllenfalltor,Daniel Siebert,Match Report,,2024
+11.0,Sat,2023-11-11,18:30,Bochum,3.7,1–1,0.9,Köln,26000.0,Vonovia Ruhrstadion,Matthias Jöllenbeck,Match Report,,2024
+11.0,Sun,2023-11-12,15:30,Leverkusen,2.4,4–0,0.0,Union Berlin,29387.0,BayArena,Timo Gerach,Match Report,,2024
+11.0,Sun,2023-11-12,17:30,Werder Bremen,1.5,2–2,2.0,Eint Frankfurt,42100.0,Wohninvest Weserstadion,Benjamin Brand,Match Report,,2024
+11.0,Sun,2023-11-12,19:30,RB Leipzig,1.9,3–1,0.5,Freiburg,41117.0,Red Bull Arena,Patrick Ittrich,Match Report,,2024
+,,,,,,,,,,,,,,2024
+12.0,Fri,2023-11-24,20:30,Köln,0.2,0–1,3.5,Bayern Munich,50000.0,RheinEnergieSTADION,Marco Fritz,Match Report,,2024
+12.0,Sat,2023-11-25,15:30,Freiburg,1.6,1–1,0.4,Darmstadt 98,34300.0,Europa-Park Stadion,Sascha Stegemann,Match Report,,2024
+12.0,Sat,2023-11-25,15:30,Werder Bremen,0.2,0–3,1.0,Leverkusen,42100.0,Wohninvest Weserstadion,Martin Petersen,Match Report,,2024
+12.0,Sat,2023-11-25,15:30,Wolfsburg,0.9,2–1,2.7,RB Leipzig,25350.0,Volkswagen Arena,Robert Hartmann,Match Report,,2024
+12.0,Sat,2023-11-25,15:30,Union Berlin,2.1,1–1,1.7,Augsburg,22012.0,Stadion An der Alten Försterei,Florian Badstübner,Match Report,,2024
+12.0,Sat,2023-11-25,15:30,Dortmund,3.2,4–2,1.0,M'Gladbach,81365.0,Signal Iduna Park,Sven Jablonski,Match Report,,2024
+12.0,Sat,2023-11-25,18:30,Eint Frankfurt,0.9,1–2,2.3,Stuttgart,58000.0,Deutsche Bank Park,Felix Brych,Match Report,,2024
+12.0,Sun,2023-11-26,15:30,Heidenheim,0.8,0–0,0.4,Bochum,15000.0,Voith-Arena,Felix Zwayer,Match Report,,2024
+12.0,Sun,2023-11-26,17:30,Hoffenheim,1.2,1–1,1.8,Mainz 05,22000.0,PreZero Arena,Deniz Aytekin,Match Report,,2024
+,,,,,,,,,,,,,,2024
+13.0,Fri,2023-12-01,20:30,Darmstadt 98,0.7,0–1,1.5,Köln,17810.0,Merck-Stadion am Böllenfalltor,Patrick Ittrich,Match Report,,2024
+13.0,Sat,2023-12-02,15:30,RB Leipzig,4.0,2–1,1.0,Heidenheim,44887.0,Red Bull Arena,Christian Dingert,Match Report,,2024
+13.0,Sat,2023-12-02,15:30,Bochum,1.5,3–1,1.3,Wolfsburg,24350.0,Vonovia Ruhrstadion,Robert Schröder,Match Report,,2024
+13.0,Sat,2023-12-02,15:30,M'Gladbach,1.6,2–1,1.4,Hoffenheim,49341.0,Stadion im Borussia-Park,Tobias Reichel,Match Report,,2024
+13.0,Sat,2023-12-02,18:30,Stuttgart,3.5,2–0,0.8,Werder Bremen,54500.0,MHPArena,Bastian Dankert,Match Report,,2024
+13.0,Sun,2023-12-03,15:30,Mainz 05,2.3,0–1,0.9,Freiburg,30300.0,Mewa Arena,Tobias Stieler,Match Report,,2024
+13.0,Sun,2023-12-03,17:30,Leverkusen,2.1,1–1,0.7,Dortmund,30210.0,BayArena,Daniel Siebert,Match Report,,2024
+13.0,Sun,2023-12-03,19:30,Augsburg,1.4,2–1,1.0,Eint Frankfurt,26107.0,WWK Arena,Harm Osmers,Match Report,,2024
+,,,,,,,,,,,,,,2024
+14.0,Fri,2023-12-08,20:30,Hoffenheim,1.5,3–1,1.5,Bochum,16023.0,PreZero Arena,Matthias Jöllenbeck,Match Report,,2024
+14.0,Sat,2023-12-09,15:30,Heidenheim,1.4,3–2,0.9,Darmstadt 98,15000.0,Voith-Arena,Daniel Schlager,Match Report,,2024
+14.0,Sat,2023-12-09,15:30,Eint Frankfurt,1.3,5–1,2.1,Bayern Munich,58000.0,Deutsche Bank Park,Felix Zwayer,Match Report,,2024
+14.0,Sat,2023-12-09,15:30,Union Berlin,2.1,3–1,1.1,M'Gladbach,22012.0,Stadion An der Alten Försterei,Martin Petersen,Match Report,,2024
+14.0,Sat,2023-12-09,15:30,Wolfsburg,1.2,0–1,1.1,Freiburg,20146.0,Volkswagen Arena,Marco Fritz,Match Report,,2024
+14.0,Sat,2023-12-09,15:30,Werder Bremen,1.5,2–0,0.7,Augsburg,41000.0,Wohninvest Weserstadion,Sascha Stegemann,Match Report,,2024
+14.0,Sat,2023-12-09,18:30,Dortmund,1.5,2–3,2.8,RB Leipzig,81365.0,Signal Iduna Park,Sven Jablonski,Match Report,,2024
+14.0,Sun,2023-12-10,15:30,Stuttgart,2.6,1–1,1.3,Leverkusen,54500.0,MHPArena,Deniz Aytekin,Match Report,,2024
+14.0,Sun,2023-12-10,17:30,Köln,0.3,0–0,1.4,Mainz 05,50000.0,RheinEnergieSTADION,Frank Willenborg,Match Report,,2024
+,,,,,,,,,,,,,,2024
+15.0,Fri,2023-12-15,20:30,M'Gladbach,1.4,2–2,1.6,Werder Bremen,50660.0,Stadion im Borussia-Park,Felix Zwayer,Match Report,,2024
+15.0,Sat,2023-12-16,15:30,Darmstadt 98,0.6,0–1,0.6,Wolfsburg,16900.0,Merck-Stadion am Böllenfalltor,Robert Hartmann,Match Report,,2024
+15.0,Sat,2023-12-16,15:30,Bochum,2.8,3–0,0.7,Union Berlin,25300.0,Vonovia Ruhrstadion,Sven Jablonski,Match Report,,2024
+15.0,Sat,2023-12-16,15:30,Augsburg,1.8,1–1,2.6,Dortmund,30660.0,WWK Arena,Matthias Jöllenbeck,Match Report,,2024
+15.0,Sat,2023-12-16,15:30,Mainz 05,1.6,0–1,0.5,Heidenheim,27200.0,Mewa Arena,Bastian Dankert,Match Report,,2024
+15.0,Sat,2023-12-16,18:30,RB Leipzig,2.8,3–1,0.8,Hoffenheim,42946.0,Red Bull Arena,Robert Schröder,Match Report,,2024
+15.0,Sun,2023-12-17,15:30,Freiburg,3.0,2–0,1.2,Köln,34700.0,Europa-Park Stadion,Harm Osmers,Match Report,,2024
+15.0,Sun,2023-12-17,17:30,Leverkusen,2.5,3–0,0.2,Eint Frankfurt,30210.0,BayArena,Christian Dingert,Match Report,,2024
+15.0,Sun,2023-12-17,19:30,Bayern Munich,2.8,3–0,0.4,Stuttgart,75000.0,Allianz Arena,Tobias Stieler,Match Report,,2024
+,,,,,,,,,,,,,,2024
+16.0,Tue,2023-12-19,18:30,Werder Bremen,1.5,1–1,1.7,RB Leipzig,41000.0,Wohninvest Weserstadion,Tobias Reichel,Match Report,,2024
+16.0,Tue,2023-12-19,20:30,Hoffenheim,3.5,3–3,0.8,Darmstadt 98,18125.0,PreZero Arena,Frank Willenborg,Match Report,,2024
+16.0,Tue,2023-12-19,20:30,Dortmund,1.2,1–1,0.9,Mainz 05,80350.0,Signal Iduna Park,Marco Fritz,Match Report,,2024
+16.0,Wed,2023-12-20,18:30,Union Berlin,1.5,2–0,0.8,Köln,22012.0,Stadion An der Alten Försterei,Deniz Aytekin,Match Report,,2024
+16.0,Wed,2023-12-20,20:30,Heidenheim,1.9,3–2,1.8,Freiburg,15000.0,Voith-Arena,Benjamin Brand,Match Report,,2024
+16.0,Wed,2023-12-20,20:30,Stuttgart,2.6,3–0,0.2,Augsburg,53600.0,MHPArena,Daniel Siebert,Match Report,,2024
+16.0,Wed,2023-12-20,20:30,Wolfsburg,0.3,1–2,2.5,Bayern Munich,28917.0,Volkswagen Arena,Sascha Stegemann,Match Report,,2024
+16.0,Wed,2023-12-20,20:30,Leverkusen,3.3,4–0,0.4,Bochum,30210.0,BayArena,Daniel Schlager,Match Report,,2024
+16.0,Wed,2023-12-20,20:30,Eint Frankfurt,1.4,2–1,0.3,M'Gladbach,58000.0,Deutsche Bank Park,Florian Badstübner,Match Report,,2024
+,,,,,,,,,,,,,,2024
+17.0,Fri,2024-01-12,20:30,Bayern Munich,2.8,3–0,1.2,Hoffenheim,75000.0,Allianz Arena,Benjamin Brand,Match Report,,2024
+17.0,Sat,2024-01-13,15:30,RB Leipzig,3.5,0–1,1.1,Eint Frankfurt,45867.0,Red Bull Arena,Frank Willenborg,Match Report,,2024
+17.0,Sat,2024-01-13,15:30,Freiburg,1.8,0–0,0.5,Union Berlin,33800.0,Europa-Park Stadion,Christian Dingert,Match Report,,2024
+17.0,Sat,2024-01-13,15:30,Augsburg,0.4,0–1,2.0,Leverkusen,30055.0,WWK Arena,Sven Jablonski,Match Report,,2024
+17.0,Sat,2024-01-13,15:30,Köln,0.9,1–1,0.9,Heidenheim,50000.0,RheinEnergieSTADION,Felix Zwayer,Match Report,,2024
+17.0,Sat,2024-01-13,15:30,Mainz 05,0.4,1–1,0.6,Wolfsburg,24000.0,Mewa Arena,Patrick Ittrich,Match Report,,2024
+17.0,Sat,2024-01-13,18:30,Darmstadt 98,1.0,0–3,3.1,Dortmund,17810.0,Merck-Stadion am Böllenfalltor,Deniz Aytekin,Match Report,,2024
+17.0,Sun,2024-01-14,15:30,Bochum,0.7,1–1,0.8,Werder Bremen,26000.0,Vonovia Ruhrstadion,Tobias Stieler,Match Report,,2024
+17.0,Sun,2024-01-14,17:30,M'Gladbach,1.9,3–1,0.9,Stuttgart,53429.0,Stadion im Borussia-Park,Harm Osmers,Match Report,,2024
+,,,,,,,,,,,,,,2024
+18.0,Sat,2024-01-20,15:30,Darmstadt 98,1.1,2–2,1.2,Eint Frankfurt,17750.0,Merck-Stadion am Böllenfalltor,Daniel Siebert,Match Report,,2024
+18.0,Sat,2024-01-20,15:30,Heidenheim,1.1,1–1,1.1,Wolfsburg,15000.0,Voith-Arena,Timo Gerach,Match Report,,2024
+18.0,Sat,2024-01-20,15:30,Köln,1.3,0–4,3.4,Dortmund,50000.0,RheinEnergieSTADION,Daniel Schlager,Match Report,,2024
+18.0,Sat,2024-01-20,15:30,Freiburg,2.7,3–2,1.4,Hoffenheim,33600.0,Europa-Park Stadion,Sascha Stegemann,Match Report,,2024
+18.0,Sat,2024-01-20,15:30,Bochum,0.9,1–0,1.4,Stuttgart,26000.0,Vonovia Ruhrstadion,Bastian Dankert,Match Report,,2024
+18.0,Sat,2024-01-20,18:30,RB Leipzig,1.6,2–3,2.0,Leverkusen,46529.0,Red Bull Arena,Matthias Jöllenbeck,Match Report,,2024
+18.0,Sun,2024-01-21,15:30,Bayern Munich,1.9,0–1,0.4,Werder Bremen,75000.0,Allianz Arena,Marco Fritz,Match Report,,2024
+18.0,Sun,2024-01-21,17:30,M'Gladbach,1.7,1–2,1.3,Augsburg,44867.0,Stadion im Borussia-Park,Martin Petersen,Match Report,,2024
+,,,,,,,,,,,,,,2024
+13.0,Wed,2024-01-24,20:30,Bayern Munich,2.1,1–0,0.2,Union Berlin,75000.0,Allianz Arena,Frank Willenborg,Match Report,,2024
+,,,,,,,,,,,,,,2024
+19.0,Fri,2024-01-26,20:30,Eint Frankfurt,1.3,1–0,0.8,Mainz 05,58000.0,Deutsche Bank Park,Felix Zwayer,Match Report,,2024
+19.0,Sat,2024-01-27,15:30,Werder Bremen,2.5,3–1,1.2,Freiburg,41500.0,Wohninvest Weserstadion,Robert Hartmann,Match Report,,2024
+19.0,Sat,2024-01-27,15:30,Augsburg,2.6,2–3,2.3,Bayern Munich,30660.0,WWK Arena,Christian Dingert,Match Report,,2024
+19.0,Sat,2024-01-27,15:30,Wolfsburg,1.5,1–1,0.6,Köln,24525.0,Volkswagen Arena,Sören Storks,Match Report,,2024
+19.0,Sat,2024-01-27,15:30,Hoffenheim,2.8,1–1,1.1,Heidenheim,20120.0,PreZero Arena,Tobias Welz,Match Report,,2024
+19.0,Sat,2024-01-27,15:30,Stuttgart,2.2,5–2,0.4,RB Leipzig,52100.0,MHPArena,Sven Jablonski,Match Report,,2024
+19.0,Sat,2024-01-27,18:30,Leverkusen,2.9,0–0,0.3,M'Gladbach,30210.0,BayArena,Deniz Aytekin,Match Report,,2024
+19.0,Sun,2024-01-28,15:30,Union Berlin,2.5,1–0,1.1,Darmstadt 98,21786.0,Stadion An der Alten Försterei,Harm Osmers,Match Report,,2024
+19.0,Sun,2024-01-28,17:30,Dortmund,2.9,3–1,0.5,Bochum,81365.0,Signal Iduna Park,Benjamin Brand,Match Report,,2024
+,,,,,,,,,,,,,,2024
+20.0,Fri,2024-02-02,20:30,Heidenheim,1.2,0–0,0.6,Dortmund,15000.0,Voith-Arena,Bastian Dankert,Match Report,,2024
+20.0,Sat,2024-02-03,15:30,Freiburg,0.7,1–3,1.7,Stuttgart,34700.0,Europa-Park Stadion,Daniel Siebert,Match Report,,2024
+20.0,Sat,2024-02-03,15:30,Bayern Munich,2.1,3–1,1.0,M'Gladbach,75000.0,Allianz Arena,Tobias Stieler,Match Report,,2024
+20.0,Sat,2024-02-03,15:30,Mainz 05,0.8,0–1,0.6,Werder Bremen,31800.0,Mewa Arena,Benjamin Brand,Match Report,,2024
+20.0,Sat,2024-02-03,15:30,Darmstadt 98,0.6,0–2,1.9,Leverkusen,17810.0,Merck-Stadion am Böllenfalltor,Tobias Reichel,Match Report,,2024
+20.0,Sat,2024-02-03,15:30,Bochum,0.9,1–1,1.6,Augsburg,24500.0,Vonovia Ruhrstadion,Patrick Ittrich,Match Report,,2024
+20.0,Sat,2024-02-03,18:30,Köln,1.3,2–0,0.8,Eint Frankfurt,50000.0,RheinEnergieSTADION,Timo Gerach,Match Report,,2024
+20.0,Sun,2024-02-04,15:30,Wolfsburg,1.7,2–2,1.7,Hoffenheim,22917.0,Volkswagen Arena,Florian Badstübner,Match Report,,2024
+20.0,Sun,2024-02-04,17:30,RB Leipzig,1.1,2–0,0.5,Union Berlin,44032.0,Red Bull Arena,Marco Fritz,Match Report,,2024
+,,,,,,,,,,,,,,2024
+18.0,Wed,2024-02-07,18:30,Mainz 05,1.3,1–1,1.0,Union Berlin,26200.0,Mewa Arena,Martin Petersen,Match Report,,2024
+,,,,,,,,,,,,,,2024
+21.0,Fri,2024-02-09,20:30,Dortmund,1.9,3–0,0.3,Freiburg,81365.0,Signal Iduna Park,Harm Osmers,Match Report,,2024
+21.0,Sat,2024-02-10,15:30,Werder Bremen,1.7,1–2,1.8,Heidenheim,41000.0,Wohninvest Weserstadion,Robert Schröder,Match Report,,2024
+21.0,Sat,2024-02-10,15:30,Union Berlin,0.5,1–0,1.3,Wolfsburg,22000.0,Stadion An der Alten Försterei,Matthias Jöllenbeck,Match Report,,2024
+21.0,Sat,2024-02-10,15:30,M'Gladbach,1.5,0–0,0.7,Darmstadt 98,46121.0,Stadion im Borussia-Park,Sascha Stegemann,Match Report,,2024
+21.0,Sat,2024-02-10,15:30,Eint Frankfurt,2.4,1–1,1.5,Bochum,57500.0,Deutsche Bank Park,Sven Jablonski,Match Report,,2024
+21.0,Sat,2024-02-10,15:30,Augsburg,0.7,2–2,1.3,RB Leipzig,28510.0,WWK Arena,Benjamin Brand,Match Report,,2024
+21.0,Sat,2024-02-10,18:30,Leverkusen,1.3,3–0,0.6,Bayern Munich,30210.0,BayArena,Felix Zwayer,Match Report,,2024
+21.0,Sun,2024-02-11,15:30,Stuttgart,1.9,3–1,1.4,Mainz 05,52005.0,MHPArena,Deniz Aytekin,Match Report,,2024
+21.0,Sun,2024-02-11,17:30,Hoffenheim,1.2,1–1,0.1,Köln,23020.0,PreZero Arena,Christian Dingert,Match Report,,2024
+,,,,,,,,,,,,,,2024
+22.0,Fri,2024-02-16,20:30,Köln,0.8,0–1,1.8,Werder Bremen,50000.0,RheinEnergieSTADION,Daniel Siebert,Match Report,,2024
+22.0,Sat,2024-02-17,15:30,Mainz 05,2.1,1–0,1.0,Augsburg,24800.0,Mewa Arena,Tobias Reichel,Match Report,,2024
+22.0,Sat,2024-02-17,15:30,Hoffenheim,1.0,0–1,1.4,Union Berlin,19050.0,PreZero Arena,Robert Hartmann,Match Report,,2024
+22.0,Sat,2024-02-17,15:30,Darmstadt 98,1.7,1–2,1.6,Stuttgart,17810.0,Merck-Stadion am Böllenfalltor,Tobias Welz,Match Report,,2024
+22.0,Sat,2024-02-17,15:30,Wolfsburg,1.8,1–1,1.4,Dortmund,28917.0,Volkswagen Arena,Martin Petersen,Match Report,,2024
+22.0,Sat,2024-02-17,15:30,Heidenheim,0.4,1–2,1.9,Leverkusen,15000.0,Voith-Arena,Harm Osmers,Match Report,,2024
+22.0,Sat,2024-02-17,18:30,RB Leipzig,1.7,2–0,0.7,M'Gladbach,44822.0,Red Bull Arena,Sören Storks,Match Report,,2024
+22.0,Sun,2024-02-18,15:30,Freiburg,2.2,3–3,1.0,Eint Frankfurt,34700.0,Europa-Park Stadion,Tobias Stieler,Match Report,,2024
+22.0,Sun,2024-02-18,17:30,Bochum,1.7,3–2,3.3,Bayern Munich,26000.0,Vonovia Ruhrstadion,Daniel Schlager,Match Report,,2024
+,,,,,,,,,,,,,,2024
+23.0,Fri,2024-02-23,20:30,Leverkusen,1.1,2–1,1.1,Mainz 05,30210.0,BayArena,Timo Gerach,Match Report,,2024
+23.0,Sat,2024-02-24,15:30,Union Berlin,1.1,2–2,1.1,Heidenheim,21341.0,Stadion An der Alten Försterei,Deniz Aytekin,Match Report,,2024
+23.0,Sat,2024-02-24,15:30,Werder Bremen,1.8,1–1,1.0,Darmstadt 98,42358.0,Wohninvest Weserstadion,Florian Badstübner,Match Report,,2024
+23.0,Sat,2024-02-24,15:30,M'Gladbach,3.5,5–2,1.6,Bochum,53196.0,Stadion im Borussia-Park,Frank Willenborg,Match Report,,2024
+23.0,Sat,2024-02-24,15:30,Stuttgart,2.2,1–1,0.7,Köln,54500.0,MHPArena,Patrick Ittrich,Match Report,,2024
+23.0,Sat,2024-02-24,18:30,Bayern Munich,1.5,2–1,0.9,RB Leipzig,75000.0,Allianz Arena,Sascha Stegemann,Match Report,,2024
+23.0,Sun,2024-02-25,15:30,Eint Frankfurt,0.9,2–2,1.0,Wolfsburg,56500.0,Deutsche Bank Park,Daniel Schlager,Match Report,,2024
+23.0,Sun,2024-02-25,17:30,Dortmund,1.9,2–3,1.3,Hoffenheim,81365.0,Signal Iduna Park,Marco Fritz,Match Report,,2024
+23.0,Sun,2024-02-25,19:30,Augsburg,1.6,2–1,1.6,Freiburg,28894.0,WWK Arena,Bastian Dankert,Match Report,,2024
+,,,,,,,,,,,,,,2024
+24.0,Fri,2024-03-01,20:30,Freiburg,1.5,2–2,1.8,Bayern Munich,34700.0,Europa-Park Stadion,Sven Jablonski,Match Report,,2024
+24.0,Sat,2024-03-02,15:30,Bochum,0.8,1–4,2.1,RB Leipzig,24200.0,Vonovia Ruhrstadion,Harm Osmers,Match Report,,2024
+24.0,Sat,2024-03-02,15:30,Heidenheim,1.0,1–2,1.2,Eint Frankfurt,15000.0,Voith-Arena,Sören Storks,Match Report,,2024
+24.0,Sat,2024-03-02,15:30,Mainz 05,1.0,1–1,1.0,M'Gladbach,33305.0,Mewa Arena,Robert Schröder,Match Report,,2024
+24.0,Sat,2024-03-02,15:30,Union Berlin,1.2,0–2,1.6,Dortmund,22012.0,Stadion An der Alten Försterei,Christian Dingert,Match Report,,2024
+24.0,Sat,2024-03-02,15:30,Darmstadt 98,0.8,0–6,2.9,Augsburg,17810.0,Merck-Stadion am Böllenfalltor,Felix Zwayer,Match Report,,2024
+24.0,Sat,2024-03-02,18:30,Wolfsburg,0.8,2–3,1.1,Stuttgart,25000.0,Volkswagen Arena,Benjamin Brand,Match Report,,2024
+24.0,Sun,2024-03-03,15:30,Köln,1.0,0–2,1.5,Leverkusen,50000.0,RheinEnergieSTADION,Tobias Stieler,Match Report,,2024
+24.0,Sun,2024-03-03,17:30,Hoffenheim,1.7,2–1,1.3,Werder Bremen,25000.0,PreZero Arena,Matthias Jöllenbeck,Match Report,,2024
+,,,,,,,,,,,,,,2024
+25.0,Fri,2024-03-08,20:30,Stuttgart,1.0,2–0,0.9,Union Berlin,53800.0,MHPArena,Robert Schröder,Match Report,,2024
+25.0,Sat,2024-03-09,15:30,Bayern Munich,6.2,8–1,0.8,Mainz 05,75000.0,Allianz Arena,Patrick Ittrich,Match Report,,2024
+25.0,Sat,2024-03-09,15:30,RB Leipzig,3.2,2–0,0.5,Darmstadt 98,40000.0,Red Bull Arena,Robert Hartmann,Match Report,,2024
+25.0,Sat,2024-03-09,15:30,M'Gladbach,1.8,3–3,0.6,Köln,54042.0,Stadion im Borussia-Park,Felix Zwayer,Match Report,,2024
+25.0,Sat,2024-03-09,15:30,Augsburg,0.5,1–0,0.4,Heidenheim,30660.0,WWK Arena,Frank Willenborg,Match Report,,2024
+25.0,Sat,2024-03-09,18:30,Werder Bremen,1.8,1–2,1.2,Dortmund,42100.0,Wohninvest Weserstadion,Deniz Aytekin,Match Report,,2024
+25.0,Sun,2024-03-10,15:30,Bochum,1.2,1–2,1.4,Freiburg,25594.0,Vonovia Ruhrstadion,Marco Fritz,Match Report,,2024
+25.0,Sun,2024-03-10,17:30,Eint Frankfurt,2.4,3–1,0.6,Hoffenheim,57000.0,Deutsche Bank Park,Bastian Dankert,Match Report,,2024
+25.0,Sun,2024-03-10,19:30,Leverkusen,2.1,2–0,0.2,Wolfsburg,29314.0,BayArena,Daniel Siebert,Match Report,,2024
+,,,,,,,,,,,,,,2024
+26.0,Fri,2024-03-15,20:30,Köln,1.2,1–5,3.3,RB Leipzig,49000.0,RheinEnergieSTADION,Florian Badstübner,Match Report,,2024
+26.0,Sat,2024-03-16,15:30,Wolfsburg,1.3,1–3,0.7,Augsburg,21735.0,Volkswagen Arena,Timo Gerach,Match Report,,2024
+26.0,Sat,2024-03-16,15:30,Heidenheim,1.1,1–1,0.5,M'Gladbach,15000.0,Voith-Arena,Martin Petersen,Match Report,,2024
+26.0,Sat,2024-03-16,15:30,Union Berlin,1.1,2–1,1.1,Werder Bremen,22012.0,Stadion An der Alten Försterei,Daniel Schlager,Match Report,,2024
+26.0,Sat,2024-03-16,15:30,Mainz 05,2.5,2–0,0.7,Bochum,33000.0,Mewa Arena,Matthias Jöllenbeck,Match Report,,2024
+26.0,Sat,2024-03-16,15:30,Darmstadt 98,1.2,2–5,3.6,Bayern Munich,17810.0,Merck-Stadion am Böllenfalltor,Tobias Reichel,Match Report,,2024
+26.0,Sat,2024-03-16,18:30,Hoffenheim,0.5,0–3,3.7,Stuttgart,30150.0,PreZero Arena,Sascha Stegemann,Match Report,,2024
+26.0,Sun,2024-03-17,15:30,Freiburg,0.9,2–3,2.3,Leverkusen,34700.0,Europa-Park Stadion,Harm Osmers,Match Report,,2024
+26.0,Sun,2024-03-17,17:30,Dortmund,2.3,3–1,0.9,Eint Frankfurt,81365.0,Signal Iduna Park,Tobias Stieler,Match Report,,2024
+,,,,,,,,,,,,,,2024
+27.0,Sat,2024-03-30,15:30,Werder Bremen,0.5,0–2,2.3,Wolfsburg,41500.0,Wohninvest Weserstadion,Sascha Stegemann,Match Report,,2024
+27.0,Sat,2024-03-30,15:30,Eint Frankfurt,1.0,0–0,1.5,Union Berlin,57100.0,Deutsche Bank Park,Marco Fritz,Match Report,,2024
+27.0,Sat,2024-03-30,15:30,RB Leipzig,2.5,0–0,0.9,Mainz 05,44813.0,Red Bull Arena,Frank Willenborg,Match Report,,2024
+27.0,Sat,2024-03-30,15:30,Leverkusen,3.1,2–1,0.8,Hoffenheim,30210.0,BayArena,Deniz Aytekin,Match Report,,2024
+27.0,Sat,2024-03-30,15:30,M'Gladbach,1.5,0–3,1.7,Freiburg,53259.0,Stadion im Borussia-Park,Christian Dingert,Match Report,,2024
+27.0,Sat,2024-03-30,18:30,Bayern Munich,1.5,0–2,0.9,Dortmund,75000.0,Allianz Arena,Harm Osmers,Match Report,,2024
+27.0,Sun,2024-03-31,15:30,Augsburg,2.2,1–1,1.3,Köln,37660.0,WWK Arena,Sören Storks,Match Report,,2024
+27.0,Sun,2024-03-31,17:30,Stuttgart,3.0,3–3,1.3,Heidenheim,60000.0,MHPArena,Felix Zwayer,Match Report,,2024
+27.0,Sun,2024-03-31,19:30,Bochum,1.8,2–2,0.9,Darmstadt 98,,Vonovia Ruhrstadion,Sven Jablonski,Match Report,,2024
+,,,,,,,,,,,,,,2024
+28.0,Fri,2024-04-05,20:30,Eint Frankfurt,,,,Werder Bremen,,Deutsche Bank Park,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,15:30,Freiburg,,,,RB Leipzig,,Europa-Park Stadion,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,15:30,Union Berlin,,,,Leverkusen,,Stadion An der Alten Försterei,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,15:30,Köln,,,,Bochum,,RheinEnergieSTADION,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,15:30,Mainz 05,,,,Darmstadt 98,,Mewa Arena,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,15:30,Heidenheim,,,,Bayern Munich,,Voith-Arena,,Head-to-Head,,2024
+28.0,Sat,2024-04-06,18:30,Dortmund,,,,Stuttgart,,Signal Iduna Park,,Head-to-Head,,2024
+28.0,Sun,2024-04-07,15:30,Hoffenheim,,,,Augsburg,,PreZero Arena,,Head-to-Head,,2024
+28.0,Sun,2024-04-07,17:30,Wolfsburg,,,,M'Gladbach,,Volkswagen Arena,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+29.0,Fri,2024-04-12,20:30,Augsburg,,,,Union Berlin,,WWK Arena,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,15:30,M'Gladbach,,,,Dortmund,,Stadion im Borussia-Park,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,15:30,Mainz 05,,,,Hoffenheim,,Mewa Arena,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,15:30,Bochum,,,,Heidenheim,,Vonovia Ruhrstadion,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,15:30,Bayern Munich,,,,Köln,,Allianz Arena,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,15:30,RB Leipzig,,,,Wolfsburg,,Red Bull Arena,,Head-to-Head,,2024
+29.0,Sat,2024-04-13,18:30,Stuttgart,,,,Eint Frankfurt,,MHPArena,,Head-to-Head,,2024
+29.0,Sun,2024-04-14,15:30,Darmstadt 98,,,,Freiburg,,Merck-Stadion am Böllenfalltor,,Head-to-Head,,2024
+29.0,Sun,2024-04-14,17:30,Leverkusen,,,,Werder Bremen,,BayArena,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+30.0,Fri,2024-04-19,20:30,Eint Frankfurt,,,,Augsburg,,Deutsche Bank Park,,Head-to-Head,,2024
+30.0,Sat,2024-04-20,15:30,Wolfsburg,,,,Bochum,,Volkswagen Arena,,Head-to-Head,,2024
+30.0,Sat,2024-04-20,15:30,Heidenheim,,,,RB Leipzig,,Voith-Arena,,Head-to-Head,,2024
+30.0,Sat,2024-04-20,15:30,Hoffenheim,,,,M'Gladbach,,PreZero Arena,,Head-to-Head,,2024
+30.0,Sat,2024-04-20,15:30,Köln,,,,Darmstadt 98,,RheinEnergieSTADION,,Head-to-Head,,2024
+30.0,Sat,2024-04-20,18:30,Union Berlin,,,,Bayern Munich,,Stadion An der Alten Försterei,,Head-to-Head,,2024
+30.0,Sun,2024-04-21,15:30,Werder Bremen,,,,Stuttgart,,Wohninvest Weserstadion,,Head-to-Head,,2024
+30.0,Sun,2024-04-21,17:30,Dortmund,,,,Leverkusen,,Signal Iduna Park,,Head-to-Head,,2024
+30.0,Sun,2024-04-21,19:30,Freiburg,,,,Mainz 05,,Europa-Park Stadion,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+31.0,Fri,2024-04-26,20:30,Bochum,,,,Hoffenheim,,Vonovia Ruhrstadion,,Head-to-Head,,2024
+31.0,Sat,2024-04-27,15:30,Augsburg,,,,Werder Bremen,,WWK Arena,,Head-to-Head,,2024
+31.0,Sat,2024-04-27,15:30,Bayern Munich,,,,Eint Frankfurt,,Allianz Arena,,Head-to-Head,,2024
+31.0,Sat,2024-04-27,15:30,Freiburg,,,,Wolfsburg,,Europa-Park Stadion,,Head-to-Head,,2024
+31.0,Sat,2024-04-27,15:30,RB Leipzig,,,,Dortmund,,Red Bull Arena,,Head-to-Head,,2024
+31.0,Sat,2024-04-27,18:30,Leverkusen,,,,Stuttgart,,BayArena,,Head-to-Head,,2024
+31.0,Sun,2024-04-28,15:30,M'Gladbach,,,,Union Berlin,,Stadion im Borussia-Park,,Head-to-Head,,2024
+31.0,Sun,2024-04-28,17:30,Mainz 05,,,,Köln,,Mewa Arena,,Head-to-Head,,2024
+31.0,Sun,2024-04-28,19:30,Darmstadt 98,,,,Heidenheim,,Merck-Stadion am Böllenfalltor,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+32.0,Fri,2024-05-03,20:30,Hoffenheim,,,,RB Leipzig,,PreZero Arena,,Head-to-Head,,2024
+32.0,Sat,2024-05-04,15:30,Stuttgart,,,,Bayern Munich,,MHPArena,,Head-to-Head,,2024
+32.0,Sat,2024-05-04,15:30,Werder Bremen,,,,M'Gladbach,,Wohninvest Weserstadion,,Head-to-Head,,2024
+32.0,Sat,2024-05-04,15:30,Dortmund,,,,Augsburg,,Signal Iduna Park,,Head-to-Head,,2024
+32.0,Sat,2024-05-04,15:30,Wolfsburg,,,,Darmstadt 98,,Volkswagen Arena,,Head-to-Head,,2024
+32.0,Sat,2024-05-04,18:30,Köln,,,,Freiburg,,RheinEnergieSTADION,,Head-to-Head,,2024
+32.0,Sun,2024-05-05,15:30,Union Berlin,,,,Bochum,,Stadion An der Alten Försterei,,Head-to-Head,,2024
+32.0,Sun,2024-05-05,17:30,Eint Frankfurt,,,,Leverkusen,,Deutsche Bank Park,,Head-to-Head,,2024
+32.0,Sun,2024-05-05,19:30,Heidenheim,,,,Mainz 05,,Voith-Arena,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+33.0,Fri,2024-05-10,20:30,Augsburg,,,,Stuttgart,,WWK Arena,,Head-to-Head,,2024
+33.0,Sat,2024-05-11,15:30,Köln,,,,Union Berlin,,RheinEnergieSTADION,,Head-to-Head,,2024
+33.0,Sat,2024-05-11,15:30,Freiburg,,,,Heidenheim,,Europa-Park Stadion,,Head-to-Head,,2024
+33.0,Sat,2024-05-11,15:30,M'Gladbach,,,,Eint Frankfurt,,Stadion im Borussia-Park,,Head-to-Head,,2024
+33.0,Sat,2024-05-11,15:30,RB Leipzig,,,,Werder Bremen,,Red Bull Arena,,Head-to-Head,,2024
+33.0,Sat,2024-05-11,18:30,Mainz 05,,,,Dortmund,,Mewa Arena,,Head-to-Head,,2024
+33.0,Sun,2024-05-12,15:30,Darmstadt 98,,,,Hoffenheim,,Merck-Stadion am Böllenfalltor,,Head-to-Head,,2024
+33.0,Sun,2024-05-12,17:30,Bayern Munich,,,,Wolfsburg,,Allianz Arena,,Head-to-Head,,2024
+33.0,Sun,2024-05-12,19:30,Bochum,,,,Leverkusen,,Vonovia Ruhrstadion,,Head-to-Head,,2024
+,,,,,,,,,,,,,,2024
+34.0,Sat,2024-05-18,15:30,Union Berlin,,,,Freiburg,,Stadion An der Alten Försterei,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Werder Bremen,,,,Bochum,,Wohninvest Weserstadion,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Dortmund,,,,Darmstadt 98,,Signal Iduna Park,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Stuttgart,,,,M'Gladbach,,MHPArena,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Hoffenheim,,,,Bayern Munich,,PreZero Arena,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Wolfsburg,,,,Mainz 05,,Volkswagen Arena,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Leverkusen,,,,Augsburg,,BayArena,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Heidenheim,,,,Köln,,Voith-Arena,,Head-to-Head,,2024
+34.0,Sat,2024-05-18,15:30,Eint Frankfurt,,,,RB Leipzig,,Deutsche Bank Park,,Head-to-Head,,2024

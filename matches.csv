@@ -6527,17 +6527,25 @@ index,date,time,comp,round,day,venue,gf,ga,opponent,poss,sh,save%,season,team
 6525,2024-02-03,15:30,Bundesliga,Matchweek 20,Sat,Home,0.0,2.0,Leverkusen,33.0,8.0,71.4,2024,Darmstadt 98
 6526,2024-02-10,15:30,Bundesliga,Matchweek 21,Sat,Away,0.0,0.0,M'Gladbach,42.0,10.0,100.0,2024,Darmstadt 98
 6527,2024-02-24,15:30,Bundesliga,Matchweek 23,Sat,Away,1.0,1.0,Werder Bremen,45.0,12.0,75.0,2024,Darmstadt 98
-0,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Away,2.0,2.0,Freiburg,62.0,20.0,66.7,2024,Bayern Munich
-0,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Away,3.0,2.0,Wolfsburg,58.0,6.0,0.0,2024,Stuttgart
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,0.0,Union Berlin,61.0,13.0,100.0,2024,Dortmund
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,4.0,1.0,Bochum,57.0,12.0,66.7,2024,RB Leipzig
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,1.0,Heidenheim,42.0,10.0,66.7,2024,Eintracht Frankfurt
-0,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Home,2.0,2.0,Bayern Munich,38.0,17.0,71.4,2024,Freiburg
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,6.0,0.0,Darmstadt 98,55.0,22.0,100.0,2024,Augsburg
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,2.0,Eint Frankfurt,58.0,15.0,60.0,2024,Heidenheim
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,1.0,1.0,Mainz 05,57.0,14.0,66.7,2024,Monchengladbach
-0,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Home,2.0,3.0,Stuttgart,42.0,12.0,33.3,2024,Wolfsburg
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,2.0,Dortmund,39.0,14.0,71.4,2024,Union Berlin
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,4.0,RB Leipzig,43.0,14.0,0.0,2024,Bochum
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,1.0,M'Gladbach,43.0,19.0,80.0,2024,Mainz 05
-0,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,6.0,Augsburg,45.0,10.0,14.3,2024,Darmstadt 98
+6528,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Away,2.0,2.0,Freiburg,62.0,20.0,66.7,2024,Bayern Munich
+6529,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Away,3.0,2.0,Wolfsburg,58.0,6.0,0.0,2024,Stuttgart
+6530,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,0.0,Union Berlin,61.0,13.0,100.0,2024,Dortmund
+6531,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,4.0,1.0,Bochum,57.0,12.0,66.7,2024,RB Leipzig
+6532,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,2.0,1.0,Heidenheim,42.0,10.0,66.7,2024,Eintracht Frankfurt
+6533,2024-03-01,20:30,Bundesliga,Matchweek 24,Fri,Home,2.0,2.0,Bayern Munich,38.0,17.0,71.4,2024,Freiburg
+6534,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,6.0,0.0,Darmstadt 98,55.0,22.0,100.0,2024,Augsburg
+6535,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,2.0,Eint Frankfurt,58.0,15.0,60.0,2024,Heidenheim
+6536,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Away,1.0,1.0,Mainz 05,57.0,14.0,66.7,2024,Monchengladbach
+6537,2024-03-02,18:30,Bundesliga,Matchweek 24,Sat,Home,2.0,3.0,Stuttgart,42.0,12.0,33.3,2024,Wolfsburg
+6538,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,2.0,Dortmund,39.0,14.0,71.4,2024,Union Berlin
+6539,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,4.0,RB Leipzig,43.0,14.0,0.0,2024,Bochum
+6540,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,1.0,1.0,M'Gladbach,43.0,19.0,80.0,2024,Mainz 05
+6541,2024-03-02,15:30,Bundesliga,Matchweek 24,Sat,Home,0.0,6.0,Augsburg,45.0,10.0,14.3,2024,Darmstadt 98
+6542,2024-03-03,15:30,Bundesliga,Matchweek 24,Sun,Away,2.0,0.0,Köln,77.0,17.0,,2024,Bayer Leverkusen
+6543,2024-03-08,20:30,Bundesliga,Matchweek 25,Fri,Home,2.0,0.0,Union Berlin,70.0,14.0,100.0,2024,Stuttgart
+6544,2024-03-03,17:30,Bundesliga,Matchweek 24,Sun,Home,2.0,1.0,Werder Bremen,47.0,14.0,85.7,2024,Hoffenheim
+6545,2024-03-03,17:30,Bundesliga,Matchweek 24,Sun,Away,1.0,2.0,Hoffenheim,53.0,18.0,71.4,2024,Werder Bremen
+6546,2024-03-08,20:30,Bundesliga,Matchweek 25,Fri,Away,0.0,2.0,Stuttgart,30.0,9.0,60.0,2024,Union Berlin
+6547,2024-03-03,15:30,Bundesliga,Matchweek 24,Sun,Home,0.0,2.0,Leverkusen,23.0,6.0,60.0,2024,Koln
+6548,2024-03-15,20:30,Bundesliga,Matchweek 26,Fri,Away,5.0,1.0,Köln,66.0,22.0,50.0,2024,RB Leipzig
+6549,2024-03-15,20:30,Bundesliga,Matchweek 26,Fri,Home,1.0,5.0,RB Leipzig,34.0,10.0,37.5,2024,Koln
